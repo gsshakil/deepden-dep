@@ -229,6 +229,10 @@ img.greyscale:hover{
     display: table;   
 }
 
+img.kickstart{
+    width: 550px;
+}
+
 .site-footer{
     background-color: #111;
     height: 200px;
