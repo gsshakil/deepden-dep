@@ -1,1 +1,446 @@
 /* CSS declarations go here */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #484848;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Open Sans', sans-serif;    
+    font-weight: 100;
+}
+
+a{
+    transition: .5s;
+    text-decoration: none !important;
+}
+
+.text-shaddow{
+    text-shadow: 1px 1px #000;
+}
+
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #4676BC;
+    border: none !important;
+}
+
+.wrapper{
+    margin-top: 50px;
+}
+
+a:hover{
+    text-decoration: none !important;
+}
+
+img.greyscale{
+    filter: grayscale(.6);
+    -webkit-filter: grayscale(.6);
+    transition: .5s;    
+}
+
+img.greyscale:hover{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);    
+}
+
+
+.m-t-sm{
+    margin-top: 15px;
+}
+.m-t-md{
+    margin-top: 25px;
+}
+.m-t-lg{
+    margin-top: 50px;
+}
+
+.m-r-sm{
+    margin-right: 15px;
+}
+
+.p-a-md{
+    padding: 50px;
+}
+
+.p-t-0{
+    padding-top: 0;
+}
+
+
+.site-footer{
+    color: #ddd;
+}
+
+.social-icons{
+    padding: 50px 0 25px;
+}
+
+.social-icons li a{
+    color: #ccc;
+}
+
+.social-icons li a:hover{
+    color: #fff;
+}
+
+/*================Navbar =====================*/
+
+.navbar.navbar-lp{
+    background-color:transparent;
+    top: 30px;    
+}
+
+.navbar{
+    /*margin-top: 50px;*/
+    background-color:#333;
+    border: none;
+    margin-bottom: 0;
+    padding-right: 25px;
+    z-index: 999;
+    border-radius: 0;
+}
+
+.navbar .navbar-nav > li > a{
+    padding: 19.5px 24px;
+    color: #ddd;
+}
+
+.navbar .navbar-nav > li > a:hover{
+    background: transparent;
+    color: #fff;
+}
+
+.navbar-brand {
+    padding: 19.5px 17.5px;
+    /*border-right: 1px solid #dce0e0;   */
+    /*height: 59px; */
+}
+
+.navbar-brand img{
+    margin-top: -12px;
+    width: 90%;
+}
+
+.user-menu{
+    margin-top: 5px;
+}
+
+.user-menu .profile-pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.btn-group{
+    margin-top: 20px;
+    background-color: transparent;
+}
+
+.btn-group:hover{
+    cursor: pointer;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.btn-group a{
+    color: #ddd;
+}
+
+.btn-group a:hover > i{
+    color: #ddd;
+}
+
+.dropdown-menu i{
+    color: #006884;
+}
+
+
+/*===============Section 1r=====================*/
+
+.section-1{
+    background: url('img/section-1.png');
+    /*position: absolute;*/
+    /*left: -1px;*/
+    /*top: 0;*/
+    width: 100%;
+    height: 100vh;
+    display: table;
+    margin-top: -60px;
+}
+
+.section-1 .content{
+    display: table-cell;
+    vertical-align: middle;
+    color: #ddd;
+}
+
+.overlay{
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    z-index: 99;
+}
+
+.section{
+    padding: 50px 0;
+    display: table;
+    width: 100%;
+}
+
+.section img{
+    background-color: #f4f4f4;
+    width: 100%;
+}
+
+.section-3{
+ 
+}
+.section-6{
+    background: url('img/inspiration.png'); 
+    width: 100%;
+    height: 300px;
+    display: table;   
+}
+
+.section .content{
+    display: table-cell;
+    vertical-align: middle;
+    color: #ddd;
+    text-shadow: 1px 1px #000;
+}
+
+.section-8{
+    background: url('img/more.jpg'); 
+    width: 100%;
+    height: 300px;
+    display: table;   
+}
+
+.site-footer{
+    background-color: #111;
+    height: 200px;
+}
+
+
+/*================List Wrapper=====================*/
+
+.list-wrapper{
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.list-wrapper-inside{
+    position: relative;
+    /*padding: 0 25px 0 45px;*/
+}
+
+/*================List Top Bar=====================*/
+
+.airbnb-list-topbar{
+    background-color: #fff;
+    border-bottom: 1px solid #dce0e0;     
+    color: #767676;
+    position: fixed;
+    width: 59%;
+    left: 0;
+    top: 110px;
+    padding: 25px 50px;
+    z-index: 99;
+}
+
+
+.airbnb-list-topbar .location{
+    float: right;
+}
+
+@media only screen and (max-width: 990px) {
+    .airbnb-list-topbar{
+        width: 100%;
+        z-index: -1;
+    }
+    .airbnb-list-topbar .location{
+        float: left;
+    }
+}
+
+/*================List Card=====================*/
+
+.list-card-wrapper{
+    background-color: #fff;
+    margin-top: 70px;
+    padding: 25px 25px 25px 50px;
+    z-index: -2;
+}
+
+.airbnb-list-card{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.airbnb-list-card a{
+    color: #000;
+}
+
+.airbnb-list-card .slider{
+    margin-bottom: 10px;
+}
+
+span.badge-rating a{
+    color: #FFB400;
+    margin-left: 10px;
+}
+
+.owl-nav{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    color: #fff;
+    font-size: 50px;
+}
+
+.owl-prev{
+    position: absolute;
+    left: 10px;
+}
+
+.owl-prev:before{
+    content: "\f104";
+    font-family: FontAwesome;
+    text-shadow: 0 0 2px #333;
+    opacity: .7;    
+}
+
+.owl-next:before{
+    content: "\f105";
+    font-family: FontAwesome;
+    text-shadow: 0 0 2px #333;
+    opacity: .7;    
+}
+
+.owl-next{
+    position: absolute;
+    right: 10px;
+}
+
+
+span.favorite{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    z-index: 9; 
+}
+
+span.favorite i{
+    color: #fff;
+    text-shadow: 0 0 2px #333;
+    opacity: .7;
+    transition: .9s;       
+}
+
+span.favorite > i:hover:before,
+span.favorite > i:hover ~ i:before {
+   content: "\f004";
+   opacity: .8;
+   
+}
+
+
+/*================Common=====================*/
+
+.cover{
+    display: table;
+    width: 100%;
+    height: 250px;
+    background-color: #777;
+    text-align: center;
+    color: #ddd;
+    text-shadow: 1px 1px #000;
+}
+
+.cover .content{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/*====================People========================*/
+
+.people-card{
+    border: 1px solid #ddd;
+}
+
+.profile-pic{
+    max-height: 325px;
+    overflow: hidden;
+}
+
+.profile-pic img{
+    padding: 0px;
+    min-height: 325px;    
+    width: 100%;
+}
+
+.people-card .content{
+    padding: 25px;
+    padding-top: 0;
+}
+
+.people-card .content .bio{
+    color: #999;
+}
+
+.people-card{
+    margin-bottom: 15px;
+}
+
+.people-filters{
+    background-color: #424242;
+    padding: 25px;
+    color: #ddd;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.people-passport{
+    background: #f4f4f4;
+    text-align: center;
+    padding: 25px;
+}
+
+.people-card .people-content{
+    background: #f4f4f4;
+    padding: 25px;    
+}
+
+.people-works-card{
+    margin-bottom: 15px;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.mat-tab-body-content{
+    margin-top: 25px;
+}
+
+.job-card{
+    margin-bottom: 25px;
+}
+
+.mat-tab-header, .mat-tab-nav-bar{
+    border-bottom: none;
+}
