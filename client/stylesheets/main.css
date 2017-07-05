@@ -50,6 +50,10 @@ img.greyscale:hover{
 }
 
 
+.m-t-0{
+    margin-top: 0 !important;
+}
+
 .m-t-sm{
     margin-top: 15px;
 }
@@ -59,9 +63,16 @@ img.greyscale:hover{
 .m-t-lg{
     margin-top: 50px;
 }
+.m-b-sm{
+    margin-bottom: 25px;
+}
 
 .m-r-sm{
     margin-right: 15px;
+}
+
+.p-a-sm{
+    padding: 25px;
 }
 
 .p-a-md{

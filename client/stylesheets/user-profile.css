@@ -1,0 +1,72 @@
+.user-profile .main-content{
+    position: relative;
+}
+.user-profile section.header{
+    height: 250px;
+    width: 100%;
+    background-color: #999;
+    position: relative;    
+}
+
+.user-profile .avatar{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 5px;
+    background-color: #ddd;
+    position: absolute;
+    left: 125px;
+    bottom: -50px;
+
+}
+
+.user-profile .avatar img{
+    width: 100%;
+    border-radius: 50%;    
+}
+
+.user-full-name{
+    position: absolute;
+    bottom: 15px;
+    left: 325px;
+    color: #ddd;
+}
+
+.user-profile .edit-profile-button{
+    position: absolute;
+    right: 100px;
+    bottom: 25px;
+}
+
+section.user-passport-wrapper{
+    position: absolute;
+    height: 100vh;
+    width: 30%;
+    left: 0;
+    top: 0;
+    padding: 50px;
+    display: table;
+    /*background-color: #ddd;*/
+}
+
+.update-info-button{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.portfolio-wrapper{
+    position: absolute;
+    left: 30%;
+    top: 0;
+    padding: 50px;
+    width: 70%;
+    height: 100vh;
+    background-color: #f4f4f4;
+    display: table;
+}
+
+.add-profile-button{
+    display: table-cell;
+    vertical-align: middle;
+}

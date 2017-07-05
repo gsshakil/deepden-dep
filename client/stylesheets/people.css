@@ -1,0 +1,127 @@
+
+/*================People=====================*/
+
+.people-details{
+    background-color: #fff;
+    /*overflow: hidden;*/
+    position: relative;
+    /*margin-top: 64px;*/
+}
+
+.passport{
+    padding: 5%;
+    background-color: #fff;
+    /*color: #ddd;*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 35%;
+}
+
+.passport h5{
+    /*color: #ccc;*/
+}
+
+.passport strong{
+    /*color: #eee;*/
+}
+
+.profile-img{
+    text-align: center;
+}
+
+.profile-img i{
+    margin-right: 10px;
+}
+
+.passport img{
+    border-radius: 50%;
+    margin-bottom: 25px;
+    width: 160px;
+    height: 160px;
+}
+
+.passport .passport-content {
+    text-align: left;
+}
+
+.passport .action-buttons a{
+    margin-bottom: 6px;
+}
+
+.passport .ct{
+    margin: 25px 0;
+}
+
+.passport .social{
+    padding: 0;
+}
+
+.passport .social li{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    list-style: none;
+    display: inline-block;
+    background-color: #ddd;
+    text-align: center;
+    line-height: 0;
+    margin-right: 6px;
+    overflow: hidden;
+}
+
+.passport .social li a{
+    display: block;
+    padding: 8px;
+    color: #333;
+}
+
+.passport .social li a:hover{
+    background-color: #2196f3;
+    color: #ddd;
+}
+
+.passport .social li i{
+    font-size: 18px;
+}
+
+
+
+
+
+.people-content{
+    padding:50px;
+    background-color: #555;
+    margin-left: 35%;
+}
+
+table.tabs{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+table.tabs tr a{
+    border: 1px solid #444;
+    background-color: #333;
+    border-right: none;
+    padding: 10px;
+    display: block;
+    color: #ddd;
+}
+
+table.tabs tr a.active{
+    background-color: #4993bf;
+    color: #ddd;
+}
+
+table.tabs tr td:last-child a{
+    border-right: 1px solid #444;
+}
+
+table.tabs tr a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #4993bf;
+    color: #ddd;
+}

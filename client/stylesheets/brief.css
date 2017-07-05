@@ -1,0 +1,13 @@
+.brief .avatar{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 5px;
+    background-color: #ddd;
+}
+
+.brief .avatar img{
+    width: 100%;
+    border-radius: 50%;    
+}

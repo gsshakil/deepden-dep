@@ -20,6 +20,31 @@ shell-server@0.2.3            # Server-side component of the `meteor shell` comm
 #autopublish@1.0.7             # Publish all data to the clients (for prototyping)
 #insecure@1.0.7                # Allow all DB writes from clients (for prototyping)
 
+accounts-ui
+useraccounts:bootstrap
+accounts-password
+accounts-facebook
+accounts-google
+service-configuration
+alanning:roles
 twbs:bootstrap
-slam310:smooth-scroll
 fortawesome:fontawesome
+kadira:flow-router
+useraccounts:flow-routing
+kadira:blaze-layout
+arillo:flow-router-helpers
+session
+markoshust:owl-carousel-2
+aldeed:simple-schema
+aldeed:collection2
+aldeed:autoform
+forwarder:autoform-wizard
+cfs:standard-packages
+ostrio:files
+ostrio:autoform-files
+chrismbeckett:toastr
+raix:handlebar-helpers
+reywood:publish-composite
+matb33:collection-hooks
+momentjs:moment
+slam310:smooth-scroll
