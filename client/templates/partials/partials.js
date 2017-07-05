@@ -10,3 +10,4 @@ Template.Navbar.helpers({
       return Meteor.users.findOne({_id: Meteor.user()._id}).profile;
     }
 });
+

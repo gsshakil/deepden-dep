@@ -1,24 +1,265 @@
-<template name="Edit_profile">
-    <div class="wrapper">
+<template name="EditProfile">
+    <div class="edit-profile user-profile">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <h3>Update Profile</h3>
-                    <hr>
-                    <form class="update-profile" action="">                        
-                        <div class="form-group">
-                            <label for="name"></label>                    
-                            <input type="text" class="form-control" name="name" id="name" value="{{#with profile}}{{name}}{{/with}}" placeholder="Enter your name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="about"></label>                    
-                            <textarea class="form-control" rows="4" id="about" name="about" value="{{#with profile}}{{about}}{{/with}}" placeholder="Tell about yourself" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Update</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+                <h2 class="m-t-lg text-center">Update Your Profile</h2>
+                <div class="col-md-8 col-sm-8 col-md-offset-2">
+                <div class="tabs-left">
+                    <ul class="nav nav-tabs">
+                    <li class="active"><a href="#a" data-toggle="tab"><span class="glyphicon glyphicon-heart m-r-sm"></span>About You</a></li>
+                    <li><a href="#b" data-toggle="tab"><span class="glyphicon glyphicon-star m-r-sm"></span>Work Experience</a></li>
+                    <li><a href="#c" data-toggle="tab"><span class="glyphicon glyphicon-headphones m-r-sm"></span>Education</a></li>
+                    <li><a href="#d" data-toggle="tab"><span class="glyphicon glyphicon-time m-r-sm"></span>Awards</a></li>
+                    <li><a href="#e" data-toggle="tab"><span class="glyphicon glyphicon-calendar m-r-sm"></span>Publication</a></li>
+                    <li><a href="#f" data-toggle="tab"><span class="glyphicon glyphicon-cog m-r-sm"></span>Settings</a></li>
+                    </ul>
+                    <div class="tab-content">
+                    <div class="tab-pane active" id="a">
+                        <h3>Brief about you</h3>
+                        <hr>
+                        <form>
+                            <div class="form-group">
+                                <label for="occupation">Your occupation</label>
+                                <select class="form-control" id="occupation">
+                                    <option>3D Artist</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Location</label>
+                                <input type="text" class="form-control" id="location" placeholder="Your Location">
+                            </div>
+                            <div class="form-group">
+                                <label for="bio">About You</label>
+                                <textarea class="form-control" rows="3" placeholder="About Yourself"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="skills">Skills you know</label>
+                                <textarea class="form-control" rows="2" placeholder="Enter few skills you know"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-block btn-default">Submit</button>
+                        </form>
+                    </div>
+                    <div class="tab-pane" id="b">
+                        <h3>Your Work Experience</h3>
+                        <hr>
+                        <form>
+                            <div class="form-group">
+                                <label>Company name</label>
+                                <input type="text" class="form-control" id="location" placeholder="Company name">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>From Year</label>                                
+                                        <select class="form-control" id="occupation">
+                                            <option>2000</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>To Year</label>                                
+                                        <select class="form-control" id="occupation">
+                                            <option>2000</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="role">Your Role</label>
+                                <input type="text" class="form-control" id="location" placeholder="Your Role">
+                            </div>
+                            <button type="submit" class="btn btn-block btn-default">Submit</button>                                               
+                        </form>
+                    </div>
+                    <div class="tab-pane" id="c">
+                        <h3>Your Education</h3>
+                        <hr>
+                        <form>
+                            <div class="form-group">
+                                <label>Institute Name</label>
+                                <input type="text" class="form-control" id="location" placeholder="Institute name">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>From Year</label>                                
+                                        <select class="form-control" id="occupation">
+                                            <option>2000</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>To Year</label>                                
+                                        <select class="form-control" id="occupation">
+                                            <option>2000</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Subject">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                            </div>
+
+                            <button type="submit" class="btn btn-block btn-default">Submit</button>                                               
+                        </form>
+                    </div>
+                    <div class="tab-pane" id="d">
+                        <h3>Awards</h3>
+                        <hr>
+                        <form>
+                            <div class="form-group">
+                                <label>Institute Name</label>
+                                <input type="text" class="form-control" id="location" placeholder="Institute name">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>From Year</label>                                
+                                        <select class="form-control" id="occupation">
+                                            <option>2000</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>To Year</label>                                
+                                        <select class="form-control" id="occupation">
+                                            <option>2000</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Subject">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                            </div>
+
+                            <button type="submit" class="btn btn-block btn-default">Submit</button>                                               
+                        </form>
+                    </div>
+                    <div class="tab-pane" id="e">
+                        <h3>Publications</h3>
+                        <hr>
+                        <form>
+                            <div class="form-group">
+                                <label>Institute Name</label>
+                                <input type="text" class="form-control" id="location" placeholder="Institute name">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>From Year</label>                                
+                                        <select class="form-control" id="occupation">
+                                            <option>2000</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>To Year</label>                                
+                                        <select class="form-control" id="occupation">
+                                            <option>2000</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Subject">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                            </div>
+
+                            <button type="submit" class="btn btn-block btn-default">Submit</button>                                               
+                        </form>
+                    </div>
+                    
+                    <div class="tab-pane" id="f">
+                        <h3>Settings</h3>
+                        <hr>
+                        <form>
+                            <div class="form-group">
+                                <label>Institute Name</label>
+                                <input type="text" class="form-control" id="location" placeholder="Institute name">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>From Year</label>                                
+                                        <select class="form-control" id="occupation">
+                                            <option>2000</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>To Year</label>                                
+                                        <select class="form-control" id="occupation">
+                                            <option>2000</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Subject">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                            </div>
+
+                            <button type="submit" class="btn btn-block btn-default">Submit</button>                                                                                             
+                                            
+                        </form>
+                    </div>
+                    </div><!-- /tab-content -->
+                </div><!-- /tabbable -->
+                </div><!-- /col -->
+            </div><!-- /row -->
+            </div><!-- /container -->
     </div>
 </template>
 

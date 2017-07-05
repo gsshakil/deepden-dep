@@ -1,118 +1,105 @@
-<template name="People_details">
-    <div class="people-details">
-        <!--<div class="row">-->
-            <!--<div class="col-md-4">-->
-                <div class="passport">
-                    <img class="profile-pic" src="img/profile-pic-1.jpg" alt="">
-                    <h5><strong>SUFFIAN SAWRI ABIR</strong></h5>
-                    <div class="passport-content">
-                        <div class="occupation">
-                            <p><strong>Software Engineer and Consultant in Dhaka, Bangladesh</strong></p>
-                        </div>
-                        <div class="action-buttons">
-                            <a href="" class="btn btn-primary"><i class="fa fa-user-plus"></i>Connect</a>
-                            <a href="" class="btn btn-primary"><i class="fa fa-envelope"></i>Message</a>
-                            <a href="" class="btn btn-primary"><i class="fa fa-ellipsis-h"></i></a>
-                        </div>
-                        <div class="ct bio">
+<template name="PeopleDetails">
+    <div class="user-profile">
+        <section class="header">
+            <div class="avatar">
+                <img src="img/profile-pic-1.jpg" alt="">
+            </div>
+            <div class="user-full-name">
+                <h3 class="text-shaddow">SUFFIAN SAWRI ABIR</h3>
+                
+            </div>
+            <div class="edit-profile-button">
+                <a href="{{pathFor 'connect'}}" class="btn btn-success">Connect</a>
+                <a href="{{pathFor 'message'}}" class="btn btn-success">Message</a>                
+            </div>
+        </section>
+        <section class="main-content">
+            <section class="user-passport-wrapper">
+                <div class="passport-content p-a-sm">
+                    <div class="text-center p-a-md p-t-0">
+                        <strong>Architect</strong><br>
+                        <small>Dhaka, Bangladesh</small>    
+                    </div>
+                    <div class="info m-t-md m-t-0">
+                        <div class="bio m-b-sm">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dignissimos error officia nisi quos numquam id! 
                                 Dolorem odio laboriosam, sed, velit, quaerat laborum, nostrum accusantium quod accusamus similique tenetur nulla!</p>                    
                         </div>
-                        <div class="ct interests">
+                        <div class="interests m-b-sm">
                             <p><strong>INTERESTS</strong></p>                        
                             #technology #music #entrepreneurship #travel #movies
                         </div>
-                        <div class="ct skills">
+                        <div class="skills m-b-sm">
                             <p><strong>SKILLS</strong></p>
                             #technology #music #entrepreneurship #travel #movies
                         </div>
-                        <div class="ct education">
+                        <div class="education m-b-sm">
                             <p><strong>EDUCATION</strong></p>                        
                             #technology #music #entrepreneurship #travel #movies
                         </div>
-                        <div class="ct work-experience">
+                        <div class="work-experience m-b-sm">
                             <p><strong>WORK EXPERIENCE</strong></p>                                                
                             #technology #music #entrepreneurship #travel #movies
                         </div>
-                        <div class="ct certification">
+                        <div class="certification m-b-sm">
                             <p><strong>CERTIFICATION</strong></p>                                                
                             #technology #music #entrepreneurship #travel #movies
                         </div>
-                        <div class="ct publication">
+                        <div class="publication m-b-sm">
                             <p><strong>PUBLICATION</strong></p>                                                
                             #technology #music #entrepreneurship #travel #movies
                         </div>
-                        <div class="ct awards">
+                        <div class="awards m-b-sm">
                             <p><strong>AWARDS</strong></p>                                                
                             #technology #music #entrepreneurship #travel #movies
                         </div>
-                        <ul class="ct social">
-                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                            <li><a href=""><i class="fa fa-youtube"></i></a></li>
-                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fa fa-google"></i></a></li>
-                        </ul>
                     </div>
                 </div>
-            <!--</div>-->
-            <!--<div class="col-md-8">-->
-                <div class="people-content">
-                    <table class="tabs">
-                        <tr>
-                            <td><a class="active" href="">Works</a></td>
-                            <td><a class="" href="">Products</a></td>
-                            <td><a class="" href="">Workshop</a></td>
-                            <td><a href="">Network</a></td>
-                            <td><a href="">Blog</a></td>
-                            <td><a href="">Discussions</a></td>                            
-                            <td><a href="">Favorites</a></td>
-                            <td><a href="">Activity</a></td>
-                        </tr>
-                    </table>
-                    
-                    <div class="works">
-                        <div class="row">
-                            <div class="col-md-4">
-                                {{> WorkCard }}                            
-                            </div>
-                            <div class="col-md-4">
-                                {{> WorkCard }}                            
-                            </div>
-                            <div class="col-md-4">
-                                {{> WorkCard }}                            
-                            </div>
-                            <div class="col-md-4">
-                                {{> WorkCard }}                            
-                            </div>
-                            <div class="col-md-4">
-                                {{> WorkCard }}                            
-                            </div>
-                            <div class="col-md-4">
-                                {{> WorkCard }}                            
-                            </div>
-                            <div class="col-md-4">
-                                {{> WorkCard }}                            
-                            </div>
-                            <div class="col-md-4">
-                                {{> WorkCard }}                            
-                            </div>
-                            <div class="col-md-4">
-                                {{> WorkCard }}                            
-                            </div>
-                            <div class="col-md-4">
-                                {{> WorkCard }}                            
-                            </div>
-                            <div class="col-md-4">
-                                {{> WorkCard }}                            
-                            </div>
-
+                <!--<div class="update-info-button text-center">
+                    <button class="btn btn-danger">Update Info</button>
+                </div>-->
+            </section>
+            <section class="portfolio-wrapper">
+                <div class="works">
+                    <div class="row">
+                        <div class="col-md-4">
+                            {{> WorkCard }}                            
+                        </div>
+                        <div class="col-md-4">
+                            {{> WorkCard }}                            
+                        </div>
+                        <div class="col-md-4">
+                            {{> WorkCard }}                            
+                        </div>
+                        <div class="col-md-4">
+                            {{> WorkCard }}                            
+                        </div>
+                        <div class="col-md-4">
+                            {{> WorkCard }}                            
+                        </div>
+                        <div class="col-md-4">
+                            {{> WorkCard }}                            
+                        </div>
+                        <div class="col-md-4">
+                            {{> WorkCard }}                            
+                        </div>
+                        <div class="col-md-4">
+                            {{> WorkCard }}                            
+                        </div>
+                        <div class="col-md-4">
+                            {{> WorkCard }}                            
+                        </div>
+                        <div class="col-md-4">
+                            {{> WorkCard }}                            
+                        </div>
+                        <div class="col-md-4">
+                            {{> WorkCard }}                            
                         </div>
                     </div>
                 </div>
-            <!--</div>-->
-        <!--</div>-->
+            </section>
+        </section>
     </div>
-        
 </template>
 
 
