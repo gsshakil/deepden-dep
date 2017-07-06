@@ -41,7 +41,7 @@
 
 section.user-passport-wrapper{
     position: absolute;
-    height: 100vh;
+    height: 70vh;
     width: 30%;
     left: 0;
     top: 0;
@@ -61,7 +61,7 @@ section.user-passport-wrapper{
     top: 0;
     padding: 50px;
     width: 70%;
-    height: 100vh;
+    height: 70vh;
     background-color: #f4f4f4;
     display: table;
 }
@@ -69,6 +69,7 @@ section.user-passport-wrapper{
 .add-profile-button{
     display: table-cell;
     vertical-align: middle;
+    width: 100%;
 }
 
 

@@ -5,56 +5,22 @@
                 <img src="img/profile-pic-1.jpg" alt="">
             </div>
             <div class="user-full-name">
-                <h3 class="text-shaddow">SUFFIAN SAWRI ABIR</h3>
+                <!--<h3 class="text-shaddow">SUFFIAN SAWRI ABIR</h3>-->
                 
             </div>
             <div class="edit-profile-button">
                 {{#if currentUser}}   
-                    <a href="{{pathFor 'editProfile'}}" class="btn btn-danger">Edit Profile</a>
+                    <a href="{{pathFor 'editProfile'}}" class="btn btn-success">Edit Profile</a>
                 {{/if}}
             </div>
         </section>
         <section class="main-content">
             <section class="user-passport-wrapper">
+                <div class="add-profile-button text-center">
+                    <button class="btn btn-success">Update Info</button>
+                </div>
                 <div class="passport-content p-a-sm">
-                    <div class="text-center p-a-md p-t-0">
-                        <strong>Architect</strong><br>
-                        <small>Dhaka, Bangladesh</small>    
-                    </div>
-                    <div class="info m-t-md m-t-0">
-                        <div class="bio m-b-sm">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dignissimos error officia nisi quos numquam id! 
-                                Dolorem odio laboriosam, sed, velit, quaerat laborum, nostrum accusantium quod accusamus similique tenetur nulla!</p>                    
-                        </div>
-                        <div class="interests m-b-sm">
-                            <p><strong>INTERESTS</strong></p>                        
-                            #technology #music #entrepreneurship #travel #movies
-                        </div>
-                        <div class="skills m-b-sm">
-                            <p><strong>SKILLS</strong></p>
-                            #technology #music #entrepreneurship #travel #movies
-                        </div>
-                        <div class="education m-b-sm">
-                            <p><strong>EDUCATION</strong></p>                        
-                            #technology #music #entrepreneurship #travel #movies
-                        </div>
-                        <div class="work-experience m-b-sm">
-                            <p><strong>WORK EXPERIENCE</strong></p>                                                
-                            #technology #music #entrepreneurship #travel #movies
-                        </div>
-                        <div class="certification m-b-sm">
-                            <p><strong>CERTIFICATION</strong></p>                                                
-                            #technology #music #entrepreneurship #travel #movies
-                        </div>
-                        <div class="publication m-b-sm">
-                            <p><strong>PUBLICATION</strong></p>                                                
-                            #technology #music #entrepreneurship #travel #movies
-                        </div>
-                        <div class="awards m-b-sm">
-                            <p><strong>AWARDS</strong></p>                                                
-                            #technology #music #entrepreneurship #travel #movies
-                        </div>
-                    </div>
+                    
                 </div>
                 <!--<div class="update-info-button text-center">
                     <button class="btn btn-danger">Update Info</button>
@@ -62,7 +28,7 @@
             </section>
             <section class="portfolio-wrapper">
                 <div class="add-profile-button text-center">
-                    <button class="btn btn-danger">Add Portfolio</button>
+                    <button class="btn btn-success">Add Portfolio</button>
                 </div>
             </section>
         </section>

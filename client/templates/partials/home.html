@@ -1,57 +1,84 @@
 <template name="Home">
     <div class="section-1">
       <div class="content text-center">
-        <h1 class="text-shaddow">Are you a Creative mind?</h1>
+        <!--<h1 class="text-shaddow">Are you a Creative mind?</h1>
         <h3 class="text-shaddow"><strong>Deepden</strong> will blow you!</h3>
+        <br>-->
+        <h1 class="text-shaddow">Are you a creative mind?</h1> 
+        <!--<h2 class="text-shaddow">Let <strong>deepden</strong> blow you!</h2>         -->
+        <h4 class="text-shaddow m-t-md description-text">Deepden helps to connect Creative Professionals around the Globe 
+          <br>to share their ideas and meeting potential clients.</h4>
         <a data-scroll href="#explore-start" class="btn btn-primary m-t-md">Explore</a>
       </div>
     </div>
 
     <div class="section section-2" id="explore-start">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4" style="margin-top:150px">
-            <h3>Organize and Showcase your Creative Works Like Never Before</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus voluptatibus facere quibusdam reprehenderit nihil, debitis necessitatibus earum quia voluptate fugiat! Soluta voluptate dolor nulla adipisci maxime, dignissimos atque quos iste.</p>
-            <a href="{{pathFor 'projects'}}" class="btn btn-primary">Explore Works</a>
-          </div>
-          <div class="col-md-8" style="padding:100px">
-              <img class="greyscale" src="img/Grid-Gallery.jpg" alt="">
-          </div>
+        <div class="row text-center">
+          <h2 class="section-heading">WHO ARE IN DEEPDEN?</h2>  
         </div>
+        <div class="row pro-cards m-t-lgx">
+            <ul class="list-inline">
+              <li><a href="">Artists</a></li>
+              <li><a href="">Architect</a></li>
+              <li><a href="">Graphic Artists</a></li>
+              <li><a href="">UX Designer</a></li>
+              <li><a href="">Film Maker</a></li>
+              <li><a href="">Photographer</a></li>
+              <li><a href="">Musician</a></li>
+              <li><a href="">Creative Writters</a></li>
+              <li><a href="">3D Artist</a></li>
+              <li><a href="">Painter</a></li>
+            </ul>
+        </div>
+        <div class="btn-load-more text-center m-t-md">
+          <a href="" class="btn btn-primary">View All</a>
+        </div>
+
       </div>
     </div> 
 
     <div class="section section-3">
       <div class="container">
-        <div class="row">
-          <div class="col-md-8 text-left" style="padding:100px 100px 100px 0">
-              <img class="greyscale" src="img/connect.jpg" alt="">
-          </div>
-          <div class="col-md-4" style="margin-top:150px">
-            <h3>Connect with the Industry</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus voluptatibus facere quibusdam reprehenderit nihil, debitis necessitatibus earum quia voluptate fugiat! Soluta voluptate dolor nulla adipisci maxime, dignissimos atque quos iste.</p>
-            <a href="{{pathFor 'people'}}" class="btn btn-primary">Browse People</a>          
-            <a href="{{pathFor 'brands'}}" class="btn btn-danger">Browse Brands</a>          
-          </div>
+        <div class="row text-center">
+          <h2 class="section-heading">DISCOVER INSPIRATIONAL WORKS</h2>            
         </div>
+        <div class="works m-t-lgx">
+            <div class="row">
+                <div class="col-md-3">
+                    {{> WorkCard }}                            
+                </div>
+                <div class="col-md-3">
+                    {{> WorkCard }}                            
+                </div>
+                <div class="col-md-3">
+                    {{> WorkCard }}                            
+                </div>
+                <div class="col-md-3">
+                    {{> WorkCard }}                            
+                </div>
+                <div class="col-md-3">
+                    {{> WorkCard }}                            
+                </div>
+                <div class="col-md-3">
+                    {{> WorkCard }}                            
+                </div>
+                <div class="col-md-3">
+                    {{> WorkCard }}                            
+                </div>
+                <div class="col-md-3">
+                    {{> WorkCard }}                            
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-load-more text-center m-t-md">
+          <a href="" class="btn btn-primary">View All</a>
+        </div>
+
       </div>
     </div>
 
-    <div class="section section-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4" style="margin-top:150px">
-            <h3>Meet Potential Clients and Customers</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus voluptatibus facere quibusdam reprehenderit nihil, debitis necessitatibus earum quia voluptate fugiat! Soluta voluptate dolor nulla adipisci maxime, dignissimos atque quos iste.</p>
-            <a href="{{pathFor 'jobs'}}" class="btn btn-primary">Find a Job</a>                      
-          </div>
-          <div class="col-md-8" style="padding:100px">
-              <img class="greyscale" src="img/clients.jpg" alt="">
-          </div>
-        </div>
-      </div>
-    </div> 
 
     <div class="section section-6">
       <div class="content text-center">
@@ -59,44 +86,46 @@
       </div>
     </div>
 
-
-    <div class="section section-5">
+    <div class="section section-4">
       <div class="container">
-        <div class="row">
-          <div class="col-md-8" style="padding:100px 100px 100px 0">
-              <img class="greyscale kickstart" src="img/KickStart.jpg"  alt="">
-          </div>
-          <div class="col-md-4" style="margin-top:150px">
-            <h3>Kickstart Your Business</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus voluptatibus facere quibusdam reprehenderit nihil, debitis necessitatibus earum quia voluptate fugiat! Soluta voluptate dolor nulla adipisci maxime, dignissimos atque quos iste.</p>
-            <a href="{{pathFor 'campaign'}}" class="btn btn-primary">Start a Campaign</a>                    
-          </div>
+        <div class="row text-center">
+          <h2 class="section-heading">MEET POTENTIAL CLIENTS</h2>  
         </div>
+        <div class="jobs-wrapper m-t-lg">
+          <div class="row">
+              {{> jobItem}}
+              {{> jobItem}}
+              {{> jobItem}}
+              {{> jobItem}}
+              {{> jobItem}}
+          </div>
+        </div> 
+
+        <div class="btn-load-more text-center m-t-md">
+          <a href="" class="btn btn-primary">View All</a>
+        </div>
+
       </div>
     </div> 
 
-    <div class="section section-7">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4" style="margin-top:100px">
-            <h3>Never Stop learning</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus voluptatibus facere quibusdam reprehenderit nihil, debitis necessitatibus earum quia voluptate fugiat! Soluta voluptate dolor nulla adipisci maxime, dignissimos atque quos iste.</p>
-            <a href="{{pathFor 'learning'}}" class="btn btn-primary">See Learning Paths</a>                    
-          </div>
-          <div class="col-md-8" style="padding:100px">
-              <img class="greyscale" src="img/learning.jpg" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--<div class="section section-8">
-      <div class="content text-center">
-        <h2>And many more...</h2>
-        <a href="{{pathFor 'join'}}" class="btn btn-primary">Join Now</a>         
-      </div>
-    </div>-->
-
     {{> Footer}}
 
+</template>
+
+
+
+<template name="jobItem">
+    <div class="col-md-8 col-md-offset-2 job-item">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="title">
+            <h2>UX Architect need</h2>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint impedit providen....</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <a href="" class="btn btn-primary m-t-md">Send Proposal</a>                  
+        </div>
+      </div>
+    </div>  
 </template>

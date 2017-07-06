@@ -6,62 +6,43 @@
     </div>
     <div class="container">
         <div class="row m-t-lg">
-            <div class="col-md-3">
-                <div class="form-group">
-                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Keywords">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Title">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Category">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Indsutry">
-                </div>
-                <div class="form-group">
-                    <select class="form-control">
-                        <option>Most Viewed</option>
-                        <option>High Rated</option>
-                        <option>Latest</option>
-                        <option>Featured</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-md-9">
+            <div class="col-md-12">
                 <div class="works">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             {{> WorkCard }}                            
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             {{> WorkCard }}                            
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             {{> WorkCard }}                            
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             {{> WorkCard }}                            
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             {{> WorkCard }}                            
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             {{> WorkCard }}                            
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             {{> WorkCard }}                            
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             {{> WorkCard }}                            
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             {{> WorkCard }}                            
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             {{> WorkCard }}                            
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
+                            {{> WorkCard }}                            
+                        </div>
+                        <div class="col-md-3">
                             {{> WorkCard }}                            
                         </div>
                     </div>
@@ -69,5 +50,36 @@
             </div>
         </div>
         
+    </div>
+</template>
+
+
+<template name="WorkCard">
+    <div class="work-item">
+        <div class="work-images">                
+            <img src="img/project1.jpg" alt="">
+            <div class="work-item-content">
+                <div class="parent">
+                    <div class="child-cell">
+                        <a href=""><h5><strong>Inspiration of Gambling</strong></h5></a>
+                        <p><small>#technology #music #entrepreneurship</small></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Vero ipsa adipisci id dolores....</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="work-item-footer">
+            <table class="tabs">
+                <tr>
+                    <td><a href=""><i class="fa fa-heart"></i>5565</a></td>
+                    <td><a href=""><i class="fa fa-eye"></i>1212</a></td>
+                    <td><a href=""><i class="fa fa-share-alt"></i></a></td>
+                </tr>
+            </table>
+        </div>
+
     </div>
 </template>

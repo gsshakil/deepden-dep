@@ -7,8 +7,9 @@
 
 .work-item{
     margin-bottom: 30px;
-    /*box-shadow: 0px 10px 10px 0px #ddd;*/
+    box-shadow: 0px 10px 10px 0px #ddd;
     position: relative;
+    /*border: 1px solid rgba(0,0,0,.1);*/
 }
 
 .work-item-content{
