@@ -40,7 +40,7 @@ AccountsTemplates.configure({
     termsUrl: 'terms-of-use',
 
     // Redirects
-    homeRoutePath: '/wizard-home',
+    homeRoutePath: '/',
     redirectTimeout: 2000,
 
     // Texts

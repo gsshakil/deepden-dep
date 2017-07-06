@@ -1,14 +1,15 @@
-<template name="EditProfileForm">
+<template name="InserJobForm">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <h3>Update You Profiel</h3>
+                <h3>Insert Job Information</h3>
                 <hr>
                 {{> quickForm 
-                    collection="Profile" 
-                    id="updateProfileForm" 
+                    collection="Jobs" 
+                    id="insertJobForm" 
                     type="method"
-                    meteormethod="updateProfile"
+                    omitFields="userId" 
+                    meteormethod="insertPlace"
                 }}
             </div>
         </div>

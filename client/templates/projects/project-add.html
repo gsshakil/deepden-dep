@@ -1,14 +1,14 @@
-<template name="EditProfileForm">
+<template name="InserProjectForm">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <h3>Update You Profiel</h3>
+                <h3>Add a Project</h3>
                 <hr>
                 {{> quickForm 
-                    collection="Profile" 
-                    id="updateProfileForm" 
+                    collection="Projects" 
+                    id="insertProjectForm" 
                     type="method"
-                    meteormethod="updateProfile"
+                    meteormethod="insertProject"
                 }}
             </div>
         </div>
