@@ -5,6 +5,9 @@
             <a href="{{pathFor 'addJob'}}" class="btn btn-success m-t-md">Post a Job</a>
         </div>
     </div>
+
+    {{> filterBarProjects}}
+
     <div class="container">
         <div class="row m-t-lg">           
             <div class="col-md-12">
@@ -18,4 +21,21 @@
             </div>
         </div>
     </div>
+</template>
+
+
+<template name="jobItem">
+    <div class="col-md-8 col-md-offset-2 job-item">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="title">
+            <h4>Applce Inc</h4>
+            <p>Product Design Lead</p>
+          </div>
+        </div>
+        <div class="col-md-3 text-center">
+            <p class="m-t-md">London</p>
+        </div>
+      </div>
+    </div>  
 </template>

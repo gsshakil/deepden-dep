@@ -9,8 +9,8 @@
                 
             </div>
             <div class="edit-profile-button">
-                <a href="{{pathFor 'connect'}}" class="btn btn-success">Connect</a>
-                <a href="{{pathFor 'message'}}" class="btn btn-success">Message</a>                
+                <a href="{{pathFor 'connect'}}" class="btn btn-primary">Connect</a>
+                <a href="{{pathFor 'message'}}" class="btn btn-primary">Message</a>                
             </div>
         </section>
         <section class="main-content">
@@ -60,43 +60,40 @@
                 </div>-->
             </section>
             <section class="portfolio-wrapper">
-                <div class="works">
-                    <div class="row">
-                        <div class="col-md-4">
-                            {{> WorkCard }}                            
-                        </div>
-                        <div class="col-md-4">
-                            {{> WorkCard }}                            
-                        </div>
-                        <div class="col-md-4">
-                            {{> WorkCard }}                            
-                        </div>
-                        <div class="col-md-4">
-                            {{> WorkCard }}                            
-                        </div>
-                        <div class="col-md-4">
-                            {{> WorkCard }}                            
-                        </div>
-                        <div class="col-md-4">
-                            {{> WorkCard }}                            
-                        </div>
-                        <div class="col-md-4">
-                            {{> WorkCard }}                            
-                        </div>
-                        <div class="col-md-4">
-                            {{> WorkCard }}                            
-                        </div>
-                        <div class="col-md-4">
-                            {{> WorkCard }}                            
-                        </div>
-                        <div class="col-md-4">
-                            {{> WorkCard }}                            
-                        </div>
-                        <div class="col-md-4">
-                            {{> WorkCard }}                            
-                        </div>
+                    <div class="navbar navbar-profile">
+                        <ul class="menu">
+                            <li class="active"><a href="">Portfolio</a></li>
+                            <li><a href="{{pathFor 'projects'}}">Network</a></li>
+                            <li><a href="{{pathFor 'jobs'}}">Favorites</a></li>
+                        </ul>
                     </div>
-                </div>
+                    <div class="row p-a-md">
+                        <div class="grid"
+                            data-isotope='{ "itemSelector": ".grid-item", "layoutMode": "fitRows" }'>                                                       
+                            <div class="grid-item">{{> WorkCard }} </div>
+                            <div class="grid-item">{{> WorkCard2 }}</div>                        
+                            <div class="grid-item">{{> WorkCard }}</div>                        
+                            <div class="grid-item">{{> WorkCard2 }}</div>                        
+                            <div class="grid-item">{{> WorkCard }}</div>                        
+                            <div class="grid-item">{{> WorkCard2 }}</div>                        
+                            <div class="grid-item">{{> WorkCard }}</div>                        
+                            <div class="grid-item">{{> WorkCard }}</div>                        
+                            <div class="grid-item">{{> WorkCard2 }}</div>                        
+                            <div class="grid-item">{{> WorkCard }}</div>                        
+                            <div class="grid-item">{{> WorkCard2 }}</div>                        
+                        </div> 
+                    </div>
+
+                     <script>
+                        $('.grid').isotope({
+                            // options...
+                            itemSelector: '.grid-item',
+                            masonry: {
+                                columnWidth: 10
+                            }
+                        });
+                    </script>
+
             </section>
         </section>
     </div>

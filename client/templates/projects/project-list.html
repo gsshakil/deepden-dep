@@ -5,52 +5,37 @@
             <a href="{{pathFor 'addProject'}}" class="btn btn-success m-t-md">Add a Project</a>
         </div>
     </div>
-    <div class="container">
+
+    {{> filterBarPeople}}
+    
+    <div class="container text-center">
         <div class="row m-t-lg">
-            <div class="col-md-12">
-                <div class="works">
-                    <div class="row">
-                        <div class="col-md-3">
-                            {{> WorkCard }}                            
-                        </div>
-                        <div class="col-md-3">
-                            {{> WorkCard }}                            
-                        </div>
-                        <div class="col-md-3">
-                            {{> WorkCard }}                            
-                        </div>
-                        <div class="col-md-3">
-                            {{> WorkCard }}                            
-                        </div>
-                        <div class="col-md-3">
-                            {{> WorkCard }}                            
-                        </div>
-                        <div class="col-md-3">
-                            {{> WorkCard }}                            
-                        </div>
-                        <div class="col-md-3">
-                            {{> WorkCard }}                            
-                        </div>
-                        <div class="col-md-3">
-                            {{> WorkCard }}                            
-                        </div>
-                        <div class="col-md-3">
-                            {{> WorkCard }}                            
-                        </div>
-                        <div class="col-md-3">
-                            {{> WorkCard }}                            
-                        </div>
-                        <div class="col-md-3">
-                            {{> WorkCard }}                            
-                        </div>
-                        <div class="col-md-3">
-                            {{> WorkCard }}                            
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="grid"
+                data-isotope='{ "itemSelector": ".grid-item", "layoutMode": "fitRows" }'>                                                       
+                <div class="grid-item">{{> WorkCard }} </div>
+                <div class="grid-item">{{> WorkCard2 }}</div>                        
+                <div class="grid-item">{{> WorkCard }}</div>                        
+                <div class="grid-item">{{> WorkCard2 }}</div>                        
+                <div class="grid-item">{{> WorkCard }}</div>                        
+                <div class="grid-item">{{> WorkCard2 }}</div>                        
+                <div class="grid-item">{{> WorkCard }}</div>                        
+                <div class="grid-item">{{> WorkCard }}</div>                        
+                <div class="grid-item">{{> WorkCard2 }}</div>                        
+                <div class="grid-item">{{> WorkCard }}</div>                        
+                <div class="grid-item">{{> WorkCard2 }}</div>                        
+            </div>                    
         </div>
         
+        <script>
+            $('.grid').isotope({
+                // options...
+                itemSelector: '.grid-item',
+                masonry: {
+                    columnWidth: 10
+                }
+            });
+        </script>
+
     </div>
 </template>
 
@@ -59,6 +44,36 @@
     <div class="work-item">
         <div class="work-images">                
             <img src="img/project1.jpg" alt="">
+            <div class="work-item-content">
+                <div class="parent">
+                    <div class="child-cell">
+                        <a href=""><h5><strong>Inspiration of Gambling</strong></h5></a>
+                        <p><small>#technology #music #entrepreneurship</small></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Vero ipsa adipisci id dolores....</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="work-item-footer">
+            <table class="tabs">
+                <tr>
+                    <td><a href=""><i class="fa fa-heart"></i>5565</a></td>
+                    <td><a href=""><i class="fa fa-eye"></i>1212</a></td>
+                    <td><a href=""><i class="fa fa-share-alt"></i></a></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</template>
+
+<template name="WorkCard2">
+    <div class="work-item">
+        <div class="work-images">                
+            <img src="img/project2.png" alt="">
             <div class="work-item-content">
                 <div class="parent">
                     <div class="child-cell">

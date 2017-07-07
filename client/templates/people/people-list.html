@@ -4,6 +4,7 @@
             <h1>Browse and Connect with Creative People</h1>
         </div>
     </div>
+    {{> filterBarPeople}}
     <div class="container">
         <div class="row m-t-lg">
             <!--People List-->
@@ -47,7 +48,7 @@
             <img class="greyscale" src="img/profile-pic-1.jpg">                                                                                   
         </div>
         <div class="content text-center">
-            <a href="{{pathFor 'peopleDetails'}}"><h2>Jon Doe</h2></a>                
+            <a href="{{pathFor 'peopleDetails'}}"><h3>Jon Doe</h3></a>                
             <small>3D Artist, Photographer</small>
             <br>
             <small>Dhaka, Bangladesh</small>              
@@ -61,5 +62,99 @@
             <li><a href=""><img class="greyscale" src="img/project1.jpg"> </a></li>
             <li><a href=""><img class="greyscale" src="img/project1.jpg"> </a></li>
         </ul>
+    </div>
+</template>
+
+
+<template name="filterBarPeople">
+    <div class="navbar navbar-filter">
+        <div class="container">
+            <div id="navbar" class="navbar-collapse collapse">
+                <form class="form-inline filter-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Keywords">
+                    </div>
+                    <select class="form-control">
+                        <option>Occupation</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <select class="form-control">
+                        <option>Skills</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Location">
+                    </div>
+                </form>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</template>
+
+<template name="filterBarProjects">
+    <div class="navbar navbar-filter">
+        <div class="container">
+            <div id="navbar" class="navbar-collapse collapse">
+                <form class="form-inline filter-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Keywords">
+                    </div>
+                    <select class="form-control">
+                        <option>Occupation</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <select class="form-control">
+                        <option>Skills</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Location">
+                    </div>
+                </form>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</template>
+
+<template name="filterBarJobs">
+    <div class="navbar navbar-filter">
+        <div class="container">
+            <div id="navbar" class="navbar-collapse collapse">
+                <form class="form-inline filter-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Keywords">
+                    </div>
+                    <select class="form-control">
+                        <option>Occupation</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <select class="form-control">
+                        <option>Skills</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Location">
+                    </div>
+                </form>
+            </div><!--/.nav-collapse -->
+        </div>
     </div>
 </template>

@@ -1,12 +1,21 @@
 
 /*================Work Card=====================*/
 
+.grid-item { 
+    width: 24%;
+    margin-right: 10px;
+    margin-bottom: -35px;  
+}
+
+.user-profile .grid-item { 
+    width: 23%;
+}
+
 .works{
     /*margin: 50px 0;*/
 }
 
 .work-item{
-    margin-bottom: 30px;
     box-shadow: 0px 10px 10px 0px #ddd;
     position: relative;
     /*border: 1px solid rgba(0,0,0,.1);*/

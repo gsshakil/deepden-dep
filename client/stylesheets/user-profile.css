@@ -1,3 +1,26 @@
+.navbar.navbar-profile{
+  background-color: transparent;
+  text-align: center;
+  border-bottom: 1px solid rgba(0,0,0,.1)
+}
+
+.navbar.navbar-profile .menu li a{  
+  color: #333;
+  padding: 20px;
+}
+
+.navbar.navbar-profile .menu li{  
+  display: inline-block;
+}
+.navbar.navbar-profile .menu li a:hover{  
+  background-color: #333;
+  color: #ddd;
+}
+
+.navbar.navbar-profile .menu{
+  margin-top: 20px;
+}
+
 .user-profile .main-content{
     position: relative;
 }
@@ -59,7 +82,7 @@ section.user-passport-wrapper{
     position: absolute;
     left: 30%;
     top: 0;
-    padding: 50px;
+    /*padding: 50px;*/
     width: 70%;
     height: 70vh;
     background-color: #f4f4f4;

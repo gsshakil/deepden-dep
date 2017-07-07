@@ -4,11 +4,11 @@
         <!--<h1 class="text-shaddow">Are you a Creative mind?</h1>
         <h3 class="text-shaddow"><strong>Deepden</strong> will blow you!</h3>
         <br>-->
-        <h1 class="text-shaddow">Are you a creative mind?</h1> 
+        <!--<h1 class="text-shaddow">Are you a creative mind?</h1> -->
         <!--<h2 class="text-shaddow">Let <strong>deepden</strong> blow you!</h2>         -->
-        <h4 class="text-shaddow m-t-md description-text">Deepden helps to connect Creative Professionals around the Globe 
-          <br>to share their ideas and meeting potential clients.</h4>
-        <a data-scroll href="#explore-start" class="btn btn-primary m-t-md">Explore</a>
+        <h2 class="text-shaddow m-t-md description-text">Deepden helps to connect Creative Professionals around <br> the Globe 
+          to share their ideas and <br> meeting potential clients.</h2>
+        <a data-scroll href="#explore-start" class="btn btn-primary m-t-md btn-large">Explore</a>
       </div>
     </div>
 
@@ -43,37 +43,35 @@
         <div class="row text-center">
           <h2 class="section-heading">DISCOVER INSPIRATIONAL WORKS</h2>            
         </div>
-        <div class="works m-t-lgx">
-            <div class="row">
-                <div class="col-md-3">
-                    {{> WorkCard }}                            
-                </div>
-                <div class="col-md-3">
-                    {{> WorkCard }}                            
-                </div>
-                <div class="col-md-3">
-                    {{> WorkCard }}                            
-                </div>
-                <div class="col-md-3">
-                    {{> WorkCard }}                            
-                </div>
-                <div class="col-md-3">
-                    {{> WorkCard }}                            
-                </div>
-                <div class="col-md-3">
-                    {{> WorkCard }}                            
-                </div>
-                <div class="col-md-3">
-                    {{> WorkCard }}                            
-                </div>
-                <div class="col-md-3">
-                    {{> WorkCard }}                            
-                </div>
-            </div>
+        <div class="row">
+            <div class="grid"
+              data-isotope='{ "itemSelector": ".grid-item", "layoutMode": "fitRows" }'>                                                       
+              <div class="grid-item">{{> WorkCard }} </div>
+              <div class="grid-item">{{> WorkCard2 }}</div>                        
+              <div class="grid-item">{{> WorkCard }}</div>                        
+              <div class="grid-item">{{> WorkCard2 }}</div>                        
+              <div class="grid-item">{{> WorkCard }}</div>                        
+              <div class="grid-item">{{> WorkCard2 }}</div>                        
+              <div class="grid-item">{{> WorkCard }}</div>                        
+              <div class="grid-item">{{> WorkCard }}</div>                        
+              <div class="grid-item">{{> WorkCard2 }}</div>                        
+              <div class="grid-item">{{> WorkCard }}</div>                        
+              <div class="grid-item">{{> WorkCard2 }}</div>                        
+          </div>
         </div>
 
+        <script>
+            $('.grid').isotope({
+                // options...
+                itemSelector: '.grid-item',
+                masonry: {
+                    columnWidth: 10
+                }
+            });
+        </script>
+
         <div class="btn-load-more text-center m-t-md">
-          <a href="" class="btn btn-primary">View All</a>
+          <a href="{{pathFor 'projects'}}" class="btn btn-primary btn-large">Discover All</a>
         </div>
 
       </div>
@@ -102,7 +100,7 @@
         </div> 
 
         <div class="btn-load-more text-center m-t-md">
-          <a href="" class="btn btn-primary">View All</a>
+          <a href="{{pathFor 'jobs'}}" class="btn btn-primary btn-large">View All</a>
         </div>
 
       </div>
@@ -110,22 +108,4 @@
 
     {{> Footer}}
 
-</template>
-
-
-
-<template name="jobItem">
-    <div class="col-md-8 col-md-offset-2 job-item">
-      <div class="row">
-        <div class="col-md-9">
-          <div class="title">
-            <h2>UX Architect need</h2>
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint impedit providen....</p>
-        </div>
-        <div class="col-md-3 text-center">
-          <a href="" class="btn btn-primary m-t-md">Send Proposal</a>                  
-        </div>
-      </div>
-    </div>  
 </template>

@@ -227,7 +227,7 @@ a.disabled{
 }
 
 .description-text{
-    line-height: 28px;
+    line-height: 48px;
 }
 
 
@@ -471,6 +471,7 @@ span.favorite > i:hover ~ i:before {
 .cover .content{
     display: table-cell;
     vertical-align: middle;
+    /*background: url('img/inspiration.png');    */
 }
 
 
@@ -481,18 +482,26 @@ span.favorite > i:hover ~ i:before {
 }
 
 .people-card{
-    border: 1px solid #ddd;
+    box-shadow: 0px 10px 10px 0px #ddd;
     position: relative;
+    padding-bottom: 1px;
 }
 
 .people-card .profile-pic{
-    padding: 3px;
+    padding: 5px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 30px;
+    margin-top: 10px;
+    background-color: #f4f4f4;
 }
 
 .profile-pic img{
     padding: 0px;
     width: 100%;
-    border-radius: 4px;
+    border-radius: 50%;
 }
 
 .people-card .content{
@@ -511,13 +520,14 @@ span.favorite > i:hover ~ i:before {
 
 .people-card .portfolio-item{
     text-align: center;
+    margin-top: -10px;
 }
 
 .people-card .portfolio-item li{
     display: inline-block;
     width: 25%;
     /*height: 50px;*/
-    padding: 25px;
+    /*padding: 25px;*/
     border: 1px solid rgba(0,0,0,.1);
 }
 
@@ -563,4 +573,19 @@ span.favorite > i:hover ~ i:before {
 
 .mat-tab-header, .mat-tab-nav-bar{
     border-bottom: none;
+}
+
+
+
+
+/*Filer Bar*/
+
+.navbar.navbar-filter{
+    opacity: 1;
+    background-color: #ddd;
+    text-align: center;
+}
+
+.filter-form{
+    margin-top: 8px;
 }

@@ -32,3 +32,12 @@ var tabsFn = (function() {
     
   $(init);
 })();
+
+$('.grid').isotope({
+  // options...
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows',
+  masonry: {
+    columnWidth: 200
+  }
+});
