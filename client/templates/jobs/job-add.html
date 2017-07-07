@@ -1,9 +1,12 @@
 <template name="InserJobForm">
+    <div class="cover cover-sm">
+        <div class="content">
+            <h1>Insert Job Information</h1>
+        </div>
+    </div>
     <div class="container">
-        <div class="row">
+        <div class="row m-t-lg">
             <div class="col-md-6 col-md-offset-3">
-                <h3>Insert Job Information</h3>
-                <hr>
                 {{> quickForm 
                     collection="Jobs" 
                     id="insertJobForm" 

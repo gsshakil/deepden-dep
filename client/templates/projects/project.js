@@ -7,3 +7,18 @@ Template.Jobs.onCreated(function () {
         }
     });
 });
+
+Template.WorkCard.events({
+  'click .work-item-content'(event, instance){
+    // Show the example modal 3 seconds after startup.
+    Modal.show('ProjectDetails')
+  }
+});
+
+Template.WorkCard2.events({
+  'click .work-item-content'(event, instance){
+    // Show the example modal 3 seconds after startup.
+    Modal.show('ProjectDetails')
+  }
+});
+

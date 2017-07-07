@@ -36,6 +36,10 @@
     transition: 0.7s;
 }
 
+.work-item-content:hover{
+    cursor: pointer;
+}
+
 .work-item-content .parent{
     display: table;
     width: 100%;
@@ -68,7 +72,7 @@
 
 .work-item-footer table.tabs tr a:hover{
     cursor: pointer;
-    background-color: #a94442;
+    background-color: #2b5163;
     color: #ddd;
 }
 
@@ -106,4 +110,26 @@
 
 .work-card a{
     color: #000;
+}
+
+
+
+
+.project-details .modal-dialog{
+    width: 65%;
+}
+
+.project-details .modal-content{
+    padding: 50px;
+}
+
+.project-details .project-images{
+    height: 450px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.project-details .project-images img{
+    height: 100%;
+    width: auto;
 }

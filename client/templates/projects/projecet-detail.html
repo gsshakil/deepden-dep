@@ -1,5 +1,81 @@
-<template name="Project_detail">
-    <div class="container">
-        <h1>Project Detail</h1>
+<template name="ProjectDetails">
+    <div class="project-details">
+        <div class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <div class="user-info pull-left m-r-sm">
+                            <img class="profile-pic" src="img/user.jpg" alt="" width="48px" height="48px">
+                        </div>
+                        <h4 class="modal-title">Project Title</h4>
+                        <p>by <a href="">username</a> <span class="gloomy"><small>on July 7, 2017</small></span></p>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class='owl-carousel'>
+                                    <div class="project-images">                                                                        
+                                        <img src="img/project1.jpg" alt="" width="100%">
+                                    </div>
+                                    <div class="project-images">                                                                        
+                                        <img src="img/project2.png" alt="" width="100%">
+                                    </div>
+                                    <div class="project-images">                                                                        
+                                        <img src="img/project1.jpg" alt="" width="100%">
+                                    </div>
+                                    <div class="project-images">                                                                        
+                                        <img src="img/project2.png" alt="" width="100%">
+                                    </div>
+                                    <div class="project-images">                                                                        
+                                        <img src="img/project1.jpg" alt="" width="100%">
+                                    </div>
+                                </div>
+
+                                <div class="project-description m-t-md">
+                                    <h4>Description</h4>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae deleniti commodi provident, debitis ex quis aliquam deserunt qui nulla earum quisquam pariatur, totam vero voluptatem autem, ad nisi corporis nostrum!</p>
+                                </div>
+                                <hr>
+                                Comments
+                            </div>
+                            <script>
+                                $('.owl-carousel').owlCarousel({
+                                    loop:true,
+                                    margin:10,
+                                    nav:false,
+                                    responsive:{
+                                        0:{
+                                            items:1
+                                        },
+                                        600:{
+                                            items:1
+                                        },
+                                        1000:{
+                                            items:1
+                                        }
+                                    }
+                                });
+                            </script>
+
+                            <div class="col-md-4">
+                                Like
+                                Share
+                                Comments
+                                <hr>
+                                More by user 
+                                <hr>
+                                Tags
+                            </div>                        
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+            </div>
+        </div>
     </div>
 </template>
