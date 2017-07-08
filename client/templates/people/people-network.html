@@ -1,4 +1,4 @@
-<template name="PeopleDetails">
+<template name="PeopleNetwork">
     <div class="user-profile">
         <section class="header">
             <div class="avatar">
@@ -62,20 +62,39 @@
                             <li><a href="{{pathFor 'peopleStream'}}">Stream</a></li>
                         </ul>
                     </div>
-                    <div class="row p-a-md" style="padding-top: 35px;">
-                        <div class="grid"
-                            data-isotope='{ "itemSelector": ".grid-item", "layoutMode": "fitRows" }'>                                                       
-                            <div class="grid-item">{{> WorkCard }} </div>
-                            <div class="grid-item">{{> WorkCard2 }}</div>                        
-                            <div class="grid-item">{{> WorkCard }}</div>                        
-                            <div class="grid-item">{{> WorkCard2 }}</div>                        
-                            <div class="grid-item">{{> WorkCard }}</div>                        
-                            <div class="grid-item">{{> WorkCard2 }}</div>                        
-                            <div class="grid-item">{{> WorkCard }}</div>                        
-                            <div class="grid-item">{{> WorkCard }}</div>                        
-                            <div class="grid-item">{{> WorkCard2 }}</div>                        
-                            <div class="grid-item">{{> WorkCard }}</div>                        
-                            <div class="grid-item">{{> WorkCard2 }}</div>                        
+                    <div class="row p-a-md" style="padding-top: 5px;">
+                        <div class="row">
+                            <!--People List-->
+                            <div class="col-md-12">
+                                <h3>PEOPLE CONNECTED WITH USER</h3>
+                                <hr>                            
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        {{> peopleCard}}
+                                    </div>
+                                    <div class="col-md-3">
+                                        {{> peopleCard}}
+                                    </div>
+                                    <div class="col-md-3">
+                                        {{> peopleCard}}
+                                    </div>
+                                    <div class="col-md-3">
+                                        {{> peopleCard}}
+                                    </div>
+                                    <div class="col-md-3">
+                                        {{> peopleCard}}
+                                    </div>
+                                    <div class="col-md-3">
+                                        {{> peopleCard}}
+                                    </div>
+                                    <div class="col-md-3">
+                                        {{> peopleCard}}
+                                    </div>
+                                    <div class="col-md-3">
+                                        {{> peopleCard}}
+                                    </div>                                            
+                                </div>
+                            </div>
                         </div> 
                     </div>
 

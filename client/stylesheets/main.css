@@ -206,6 +206,17 @@ a.disabled{
     color: #006884;
 }
 
+.navbar-right span.count{
+    position: absolute;
+    background-color: red;
+    color: #ddd;
+    padding: 3px;
+    border-radius: 3px;
+    top: 10px;
+    left: 25px;
+    font-size: 9px;   
+}
+
 
 /*===============Section 1r=====================*/
 

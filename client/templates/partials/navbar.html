@@ -18,9 +18,9 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     {{#if currentUser}}  
-                        <li><a href=""><i class="fa fa-bandcamp fa-md"></i></a></li>                  
-                        <li><a href=""><i class="fa fa-envelope fa-md"></i></a></li>                  
-                        <li><a href=""><i class="fa fa-bell fa-md"></i></a></li>                  
+                        <li><a href="{{pathFor 'peopleStream'}}"><i class="fa fa-bandcamp fa-md"></i><span class="count">20+</span></a></li>                  
+                        <li><a href="" class="msgModal"><i class="fa fa-envelope fa-md"></i><span class="count">234</span></a></li>                  
+                        <li><a href="" class="notificationModal"><i class="fa fa-bell fa-md"></i><span class="count">234</span></a></li>                  
                         <li class="user-menu">
                             <div class="dropdown">
                                 <a href="#" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">

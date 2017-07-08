@@ -1,4 +1,4 @@
-<template name="PeopleDetails">
+<template name="PeopleFavorites">
     <div class="user-profile">
         <section class="header">
             <div class="avatar">
@@ -62,7 +62,9 @@
                             <li><a href="{{pathFor 'peopleStream'}}">Stream</a></li>
                         </ul>
                     </div>
-                    <div class="row p-a-md" style="padding-top: 35px;">
+                    <div class="row p-a-md" style="padding-top: 5px;">
+                        <h3>FAVORITES BY USER</h3>
+                        <hr>
                         <div class="grid"
                             data-isotope='{ "itemSelector": ".grid-item", "layoutMode": "fitRows" }'>                                                       
                             <div class="grid-item">{{> WorkCard }} </div>

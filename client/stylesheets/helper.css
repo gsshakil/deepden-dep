@@ -10,3 +10,11 @@
 .gloomy{
     color: #777;
 }
+
+.p-b-sm{
+    padding-bottom: 15px !important;
+}
+
+.m-a-lg{
+    margin: 50px;
+}

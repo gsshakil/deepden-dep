@@ -40,7 +40,7 @@ AccountsTemplates.configure({
     termsUrl: 'terms-of-use',
 
     // Redirects
-    homeRoutePath: '/',
+    homeRoutePath: '/profile',
     redirectTimeout: 2000,
 
     // Texts
