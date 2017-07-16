@@ -217,6 +217,10 @@ a.disabled{
     font-size: 9px;   
 }
 
+.nav > li > a:hover, .nav > li > a:focus{
+    background: transparent !important;
+    outline: 0 !important;
+}
 
 /*===============Section 1r=====================*/
 
@@ -238,7 +242,8 @@ a.disabled{
 }
 
 .description-text{
-    line-height: 48px;
+    font-size: 24px;
+    line-height: 30px;
 }
 
 
@@ -301,6 +306,8 @@ a.disabled{
     margin-bottom: 3px;
     text-align: center;
     padding: 0;
+    box-shadow: 0 0 5px 5px #f4f4f4;
+    border-radius: 5px;
 }
 
 
@@ -316,6 +323,57 @@ a.disabled{
     color: #ddd;
     cursor: pointer;
 }
+
+.pro-cards ul li a.c1:hover{
+    background-color: #7b3232;
+    color: #ddd;
+}
+
+.pro-cards ul li a.c2:hover{
+    background-color: #462d73;
+    color: #ddd;
+}
+
+.pro-cards ul li a.c3:hover{
+    background-color: #1a7ebd;
+    color: #ddd;
+}
+
+.pro-cards ul li a.c4:hover{
+    background-color: #d87272;
+    color: #ddd;
+}
+
+.pro-cards ul li a.c5:hover{
+    background-color:#3d7911;
+    color: #ddd;
+}
+
+.pro-cards ul li a.c6:hover{
+    background-color: #b71d7e;
+    color: #ddd;
+}
+
+.pro-cards ul li a.c7:hover{
+    background-color: #5badec;
+    color: #ddd;
+}
+
+.pro-cards ul li a.c8:hover{
+    background-color: #3ea93e;
+    color: #ddd;
+}
+
+.pro-cards ul li a.c9:hover{
+    background-color: #a070d2;
+    color: #ddd;
+}
+
+.pro-cards ul li a.c10:hover{
+    background-color: #e2e04e;
+    color: #999;
+}
+
 
 .section-6{
     background: url('img/inspiration.png'); 

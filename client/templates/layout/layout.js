@@ -2,6 +2,10 @@ Template.registerHelper('formateDate', (date)=>{
 	return moment(date).format('MMMM YYYY');
 });
 
+Template.layout1.onRendered(function () {
+    $('head').append('<script type="text/javascript" src="https://static.filestackapi.com/v3/filestack.js"></script>');
+});
+
 Meteor.startup(() => {
     // code to run on server at startup
     smoothScroll.init({
@@ -13,7 +17,6 @@ Meteor.startup(() => {
       offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
       callback: function ( toggle, anchor ) {} // Function to run after scrolling
     });
-
 });
 
 var tabsFn = (function() {

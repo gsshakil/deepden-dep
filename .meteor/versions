@@ -98,6 +98,7 @@ mongo@1.1.18
 mongo-id@1.0.6
 mongo-livedata@1.0.12
 mozfet:autoform-materialize@0.1.13
+nolimits4web:swiper@3.4.1
 npm-bcrypt@0.9.3
 npm-mongo@2.2.24
 oauth@1.1.13

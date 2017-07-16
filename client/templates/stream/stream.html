@@ -1,16 +1,48 @@
 <template name="Stream">
-    <div class="wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 text-center">
-                    Sidebar
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="input-box o-h">
+                <textarea name="" id="" class="form-controll" rows="3" placeholder="Share what is in your mind!"></textarea>
+                <div class="keyboard">
+                    <ul class="list-inline pull-left">
+                        <li><a href=""><i class="fa fa-camera fa-md"></i></a></li>
+                        <li><a href=""><i class="fa fa-smile-o fa-md"></i></a></li>
+                        <li><a href=""><i class="fa fa-tags fa-md"></i></a></li>
+                        <li><a href=""><i class="fa fa-location-arrow fa-md"></i></a></li>
+                    </ul>
+                    
                 </div>
-                <div class="col-md-6 text-center">
-                    Stram Posts
+                <div class="input-box-footer">
+                    <a href="" class="btn btn-primary pull-right">Share</a>
                 </div>
-                <div class="col-md-3 text-center">
-                    Sidebar <Right></Right>
-                </div>
+            </div>
+            <ul class="feed-post-wrapper m-t-md">
+                <li>{{> feedPost}}</li>
+                <li>{{> feedPost}}</li>
+                <li>{{> feedPost}}</li>
+                <li>{{> feedPost}}</li>
+            </ul>
+        </div>
+    </div>
+</template>
+
+<template name="feedPost">
+    <div class="feed-post">
+        <div class="user-info">
+            user and post title
+        </div>
+        <hr>
+        <div class="post-content">
+            post content
+        </div>
+        <hr>
+        <div class="post-footer">
+            <div class="post-action-bar">
+                like, comment, share bar
+            </div>
+            <hr>
+            <div class="post-comments">
+                comments
             </div>
         </div>
     </div>

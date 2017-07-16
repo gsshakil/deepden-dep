@@ -1,0 +1,39 @@
+.notification .modal-dialog{
+    width: 380px;
+}
+
+.notification .modal-content{
+    max-height: 600px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.notification .modal-body{
+    padding: 0;
+}
+
+.notification-list{
+
+}
+
+.notification-list ul{
+    padding: 0;
+}
+
+.notification-list ul li{
+    overflow: hidden;
+    list-style: none;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 15px;
+    transition: .3s;
+}
+
+.notification-list ul li:hover{
+    cursor: pointer;
+    background-color: #2b5163;
+    color: #ddd;
+}
+
+.notification-list ul li img.profile-pic{
+    border-radius: 50%;
+}

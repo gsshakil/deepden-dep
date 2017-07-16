@@ -1,0 +1,35 @@
+.input-box{
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0px 5px 5px 0px #ddd;
+    border-radius: 4px;
+}
+.input-box textarea{
+    border: 1px solid rgba(0,0,0, .1);
+    padding: 10px;
+    width: 100%;
+}
+
+.keyboard ul{
+    margin-top: 10px;
+}
+
+.keyboard li a{
+    padding: 5px;
+}
+
+.feed-post-wrapper{
+    list-style: none;
+    padding: 0;
+}
+
+.feed-post-wrapper li{
+    margin-bottom: 15px;
+}
+
+.feed-post{
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0px 5px 5px 0px #ddd;
+    border-radius: 4px;
+}

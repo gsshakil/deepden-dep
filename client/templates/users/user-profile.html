@@ -1,9 +1,8 @@
 <template name="UserProfile">
     <div class="user-profile">
         <section class="header">
-            <div class="avatar">
-                <img src="img/profile-pic-1.jpg" alt="">
-            </div>
+            {{> CoverPhoto}}
+            {{> Avatar}}
             <div class="user-full-name">
                 <!--<h3 class="text-shaddow">SUFFIAN SAWRI ABIR</h3>-->
                 
@@ -17,7 +16,7 @@
         <section class="main-content">
             <section class="user-passport-wrapper">
                 <div class="add-profile-button text-center">
-                    <button class="btn btn-success">Update Info</button>
+                    <a href="{{pathFor 'editProfile'}}" class="btn btn-success">Update Info</a>
                 </div>
                 <div class="passport-content p-a-sm">
                     
@@ -28,9 +27,25 @@
             </section>
             <section class="portfolio-wrapper">
                 <div class="add-profile-button text-center">
-                    <button class="btn btn-success">Add Portfolio</button>
+                    <a class="btn btn-success filestack">Add Portfolio</a>
                 </div>
             </section>
         </section>
+    </div>
+</template>
+
+<template name="Avatar">
+    <div class="avatar">
+        <img src="img/profile-pic-1.jpg" class="upload-avatar filestack" alt="">
+        <!--<div class="upload-avatar">
+            <a href="" class="btn-upload-avatar filestack">Upload Avatar</a>        
+        </div>-->
+    </div>
+</template>
+
+
+<template name="CoverPhoto">
+    <div class="upload-cover-photo">
+        <a href="" class="btn-upload-cover-photo"><i class="fa fa-camera fa-md m-r-sm"></i>Upload Cover Photo</a>
     </div>
 </template>

@@ -9,6 +9,10 @@ Template.Navbar.events({
   'click .notificationModal'(event, instance){
     // Show the example modal 3 seconds after startup.
     Modal.show('Notification');
+  },
+  'click .btn-add-project'(event, instance){
+    // Show the example modal 3 seconds after startup.
+    Modal.show('InserProjectForm')
   }
 });
 
@@ -18,4 +22,5 @@ Template.Navbar.helpers({
       return Meteor.users.findOne({_id: Meteor.user()._id}).profile;
     }
 });
+
 

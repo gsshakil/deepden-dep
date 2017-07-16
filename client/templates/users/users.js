@@ -31,3 +31,29 @@
 //         return false;
 //     }   
 // });
+
+Template.Avatar.events({
+  'click img.filestack'(event,instance){
+    if(WebApp.filestack)
+      WebApp.filestack.pick({
+      }).then(function(result) {
+          console.log(JSON.stringify(result.filesUploaded))
+      });
+    }
+});
+
+Template.CoverPhoto.events({
+  'click a.btn-upload-cover-photo'(event,instance){
+    if(WebApp.filestack)
+      WebApp.filestack.pick({
+      }).then(function(result) {
+          console.log(JSON.stringify(result.filesUploaded))
+      });
+    }
+});
+
+Template.UserProfile.events({
+  'click a.filestack'(event,instance){
+     Modal.show('InserProjectForm')
+    }
+});
