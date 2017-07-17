@@ -6,11 +6,14 @@
         </div>
     </div>
 
-    {{> filterBarProjects}}
+    <!-- {{> filterBarProjects}} -->
 
     <div class="container">
-        <div class="row m-t-lg">           
-            <div class="col-md-12">
+        <div class="row m-t-lg">
+            <div class="col-md-3">
+                {{> PeopleFilter}}
+            </div>           
+            <div class="col-md-9">
                 <div class="row m-b-lg">
                     {{> jobItem}}
                     {{> jobItem}}

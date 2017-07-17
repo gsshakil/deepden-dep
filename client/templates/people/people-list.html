@@ -4,36 +4,33 @@
             <h1>Browse and Connect with Creative People</h1>
         </div>
     </div>
-    {{> filterBarPeople}}
+    <!-- {{> filterBarPeople}} -->
     <div class="container">
         <div class="row m-t-lg">
             <!--People List-->
-            <div class="col-md-12">
+            <div class="col-md-3">
+                {{> PeopleFilter}}
+            </div>
+            <div class="col-md-9">
                 <div class="row p-a-md p-t-0">
-                    <div class="col-md-3">
-                        {{> peopleCard}}
+                    <div class="col-md-6">
+                        {{> PeopleCard3}}
                     </div>
-                    <div class="col-md-3">
-                        {{> peopleCard}}
+                    <div class="col-md-6">
+                        {{> PeopleCard3}}
                     </div>
-                    <div class="col-md-3">
-                        {{> peopleCard}}
+                    <div class="col-md-6">
+                        {{> PeopleCard3}}
                     </div>
-                    <div class="col-md-3">
-                        {{> peopleCard}}
+                    <div class="col-md-6">
+                        {{> PeopleCard3}}
                     </div>
-                    <div class="col-md-3">
-                        {{> peopleCard}}
+                    <div class="col-md-6">
+                        {{> PeopleCard3}}
                     </div>
-                    <div class="col-md-3">
-                        {{> peopleCard}}
-                    </div>
-                    <div class="col-md-3">
-                        {{> peopleCard}}
-                    </div>
-                    <div class="col-md-3">
-                        {{> peopleCard}}
-                    </div>                                            
+                    <div class="col-md-6">
+                        {{> PeopleCard3}}
+                    </div>                                           
                 </div>
             </div>
         </div>
@@ -156,6 +153,43 @@
                     </div>
                 </form>
             </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</template>
+
+<template name="PeopleCard3">
+    <div class="people">
+		<div>
+			<figure>
+                <div class="profile-pic">
+                    <a href="/samuele-dossena/">
+                        <img alt="samuele dossena" src="http://img.archilovers.com/people/thumb3_c3cf00f4-8f7a-48ab-bd63-d94570573246.jpg"> <i></i>
+                    </a>
+                </div>
+				<figcaption>
+					<ul class="people-info">
+						<li class="name"><a href="/samuele-dossena/"><b>samuele dossena</b></a></li>
+						<li class="job">Artist/Craftsman</li>
+						<li class="location">Milan / Italy</li>
+					</ul>
+					<div class="viewinfo">						
+                        <a href="" class="btn btn-primary"><i class="fa fa-user-plus fa-md"></i></a>
+                        <a href="" class="btn btn-primary"><i class="fa fa-envelope fa-md"></i></a>
+                        <!-- <span class="numlove"><i></i>4</span> -->
+                        <!-- <div class="cont-views">
+                            <span class="viewsOn followers"><span class="numviews">4</span> <span class="text">Followers</span></span>
+                            <span class="viewsOn projects"><span class="numviews">5</span> <span class="text">Projects</span></span>
+                        </div> -->
+                    </div>
+                </figcaption>
+            </figure>
+            <a href="/samuele-dossena/" class="list-proj-people">
+                <ul class="sample-work">    
+                    <li><img class="lazy" data-original="http://img.archilovers.com/projects/e_150_0148fc52-77b6-4ea1-b2c4-64a11fbd6582.jpg" src="http://img.archilovers.com/projects/e_150_0148fc52-77b6-4ea1-b2c4-64a11fbd6582.jpg" style="display: inline;"></li>
+                    <li><img class="lazy" data-original="http://img.archilovers.com/projects/e_150_fa2d9d4c-848f-40b5-85ec-1d4e3d66b77e.JPG" src="http://img.archilovers.com/projects/e_150_fa2d9d4c-848f-40b5-85ec-1d4e3d66b77e.JPG" style="display: inline;"></li>
+                    <li><img class="lazy" data-original="http://img.archilovers.com/projects/e_150_54c52246-c2bb-45c4-bc5c-8a434e319fe7.jpg" src="http://img.archilovers.com/projects/e_150_54c52246-c2bb-45c4-bc5c-8a434e319fe7.jpg" style="display: inline;"></li>
+                </ul>
+            </a>
         </div>
     </div>
 </template>
