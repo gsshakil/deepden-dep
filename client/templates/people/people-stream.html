@@ -1,72 +1,23 @@
 <template name="PeopleStream">
-    <div class="user-profile">
-        <section class="header">
-            <div class="avatar">
-                <img src="img/profile-pic-1.jpg" alt="">
-            </div>
-            <div class="user-full-name">
-                <h3 class="text-shaddow">SUFFIAN SAWRI ABIR</h3>
-                
-            </div>
-            <div class="edit-profile-button">
-                <a href="{{pathFor 'connect'}}" class="btn btn-primary">Connect</a>
-                <a href="{{pathFor 'message'}}" class="btn btn-primary">Message</a>                
-            </div>
-        </section>
-        <section class="main-content">
-            <section class="user-passport-wrapper">
-                <div class="passport-content p-a-sm">
-                    <div class="text-center p-a-md p-t-0 p-b-sm">
-                        <strong>Architect</strong><br>
-                        <small>Dhaka, Bangladesh</small>    
-                    </div>
-                    <hr>
-                    <div class="info m-t-md m-t-0">
-                        <p><strong>ABOUT</strong></p>                        
-                        <div class="bio m-b-sm">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dignissimos error officia nisi quos numquam id! 
-                                Dolorem odio laboriosam, sed, velit, quaerat laborum, nostrum accusantium quod accusamus similique tenetur nulla!</p>                    
-                        </div>
-                        <hr>
-                        <div class="skills m-b-sm">
-                            <p><strong>SKILLS</strong></p>
-                            <ul class="list-inline skill-tag">
-                                <li><a href="">Arhitecture</a></li>
-                                <li><a href="">Drawing</a></li>
-                                <li><a href="">Sketch</a></li>
-                                <li><a href="">Painting</a></li>
-                                <li><a href="">Photography</a></li>
-                                <li><a href="">3D Modeling</a></li>
-                                <li><a href="">Animation</a></li>
-                                <li><a href="">Autocad</a></li>
-                                <li><a href="">3ds Max</a></li>
-                                <li><a href="">V-Ray</a></li>
-                            </ul>
-                        </div>
-                        <hr>
-                        <ul class="list-inline ct social">
-                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                            <li><a href=""><i class="fa fa-youtube"></i></a></li>
-                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fa fa-google"></i></a></li>
-                        </ul>
+    <div class="stream">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="left-sidebar m-t-md">
+                        Sidebar                    
                     </div>
                 </div>
-            </section>
-            <section class="portfolio-wrapper">
-                    <div class="navbar navbar-profile">
-                        <ul class="menu">
-                            <li class="active"><a href="{{pathFor 'peopleDetails'}}">Portfolio</a></li>
-                            <li><a href="{{pathFor 'peopleNetwork'}}">Network</a></li>
-                            <li><a href="{{pathFor 'peopleFavorites'}}">Favorites</a></li>
-                            <li><a href="{{pathFor 'peopleStream'}}">Stream</a></li>
-                        </ul>
-                    </div>
-                    <div class="row p-a-md" style="padding-top: 35px;">
+                <div class="col-md-8">
+                    <div class="stream-wrapper" style="padding-top: 35px;">
                         {{> Stream }}
                     </div>
-
-            </section>
-        </section>
+                </div>
+                <div class="col-md-2">
+                    <div class="right-sidebar m-t-md">
+                        Sidebar                    
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>

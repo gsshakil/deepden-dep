@@ -1,0 +1,15 @@
+.top-filter{
+    background-color: #ecf0f1;
+    margin: 10px 0px 25px;
+    padding: 10px 0;
+}
+
+.profession-filter{
+    list-style: none;
+    padding: 0;
+    padding-bottom: 25px;
+}
+
+#profession{
+    padding-bottom: 15px;
+}

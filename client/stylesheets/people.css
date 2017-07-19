@@ -136,6 +136,7 @@ table.tabs tr a:hover{
     box-shadow: 5px 10px 10px 5px #f4f4f4;
     padding: 15px;
     margin-bottom: 25px;
+    background-color: #f9f6f3;
 }
 
 .people figure{
@@ -196,4 +197,16 @@ table.tabs tr a:hover{
 
 .people .sample-work li img{
     width: 100%;
+}
+
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body{
+    max-height: 450px;
+    overflow: auto;
+}
+
+section.locations,
+section.profession{
+    /* box-shadow: 5px 10px 10px 5px #f4f4f4; */
+    padding: 10px;
 }

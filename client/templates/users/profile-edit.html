@@ -5,14 +5,57 @@
         </div>
     </div>
     <div class="container">
-        <div class="row m-a-lg">
-            <div class="col-md-6 col-md-offset-3">
-                {{> quickForm 
-                    collection="Profile" 
-                    id="updateProfileForm" 
-                    type="method"
-                    meteormethod="updateProfile"
-                }}
+        <div class="row m-b-md">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="tabs-left">		
+                      <ul class="nav nav-tabs">		 
+                        <li class="active"><a href="#a" data-toggle="tab"><span class="glyphicon glyphicon-heart m-r-sm"></span>About You</a></li>
+                         <li><a href="#b" data-toggle="tab"><span class="glyphicon glyphicon-star m-r-sm"></span>Work Experience</a></li>		
+                         <li><a href="#c" data-toggle="tab"><span class="glyphicon glyphicon-headphones m-r-sm"></span>Education</a></li>		
+                         <li><a href="#d" data-toggle="tab"><span class="glyphicon glyphicon-time m-r-sm"></span>Awards</a></li>		
+                         <li><a href="#e" data-toggle="tab"><span class="glyphicon glyphicon-calendar m-r-sm"></span>Publication</a></li>	
+                         <li><a href="#f" data-toggle="tab"><span class="glyphicon glyphicon-cog m-r-sm"></span>Settings</a></li>		
+                     </ul>	
+
+                     <div class="tab-content">		
+                         <div class="tab-pane p-a-sm active" id="a">		
+                             <h3>Brief about you</h3>		
+                             <hr>		
+                             {{> quickForm 
+                                collection="Profile" 
+                                id="updateProfileForm" 
+                                type="method"
+                                meteormethod="updateProfile"
+                            }}	
+                        </div>		
+                        <div class="tab-pane" id="b">		
+                            <h3>Your Work Experience</h3>		
+                            <hr>		
+                                
+                        </div>		
+                        <div class="tab-pane" id="c">		
+                            <h3>Your Education</h3>		
+                            <hr>		
+                                
+                        </div>		
+                        <div class="tab-pane" id="d">		
+                            <h3>Awards</h3>		
+                            <hr>		
+                                
+                        </div>		
+                        <div class="tab-pane" id="e">		
+                            <h3>Publications</h3>		
+                            <hr>		
+                                    
+                        </div>		
+                                
+                        <div class="tab-pane" id="f">		
+                            <h3>Settings</h3>		
+                            <hr>		
+                                
+                        </div>		
+                     </div><!-- /tab-content -->		
+                 </div><!-- /tabbable -->	
             </div>
         </div>
     </div>

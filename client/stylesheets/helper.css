@@ -30,3 +30,59 @@
 .fsp-picker__footer--visible, body>div>div.fsp-picker.fsp-picker--active>div.fsp-picker__footer.fsp-picker__footer--visible{
     display: none;
 }
+
+.m-a-md{
+    margin: 50px;
+}
+
+.m-t-md{
+    margin-top: 50px;
+}
+
+
+.m-t-0{
+    margin-top: 0 !important;
+}
+
+.m-t-sm{
+    margin-top: 15px;
+}
+.m-t-md{
+    margin-top: 25px;
+}
+.m-t-lg{
+    margin-top: 50px;
+}
+.m-t-lgx{
+    margin-top: 100px;
+}
+.m-b-sm{
+    margin-bottom: 25px;
+}
+.m-b-md{
+    margin-bottom: 50px;
+}
+
+.m-r-sm{
+    margin-right: 15px;
+}
+
+.p-a-sm{
+    padding: 25px;
+}
+
+.p-a-md{
+    padding: 50px;
+}
+
+.p-t-0{
+    padding-top: 0;
+}
+
+.fa-md{
+    font-size: 18px;
+}
+
+.b-s-md{
+    box-shadow: 5px 10px 10px 5px #f4f4f4;
+}

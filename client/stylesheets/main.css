@@ -63,47 +63,6 @@ a.disabled{
     pointer-events: none;
 }
 
-.m-t-0{
-    margin-top: 0 !important;
-}
-
-.m-t-sm{
-    margin-top: 15px;
-}
-.m-t-md{
-    margin-top: 25px;
-}
-.m-t-lg{
-    margin-top: 50px;
-}
-.m-t-lgx{
-    margin-top: 100px;
-}
-.m-b-sm{
-    margin-bottom: 25px;
-}
-
-.m-r-sm{
-    margin-right: 15px;
-}
-
-.p-a-sm{
-    padding: 25px;
-}
-
-.p-a-md{
-    padding: 50px;
-}
-
-.p-t-0{
-    padding-top: 0;
-}
-
-.fa-md{
-    font-size: 18px;
-}
-
-
 .site-footer{
     color: #ddd;
 }
@@ -135,7 +94,7 @@ a.disabled{
     padding-right: 25px;
     z-index: 999;
     border-radius: 0;
-    opacity: .7;
+    /* opacity: .7; */
 }
 
 .navbar .navbar-nav > li > a{

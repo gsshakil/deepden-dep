@@ -20,6 +20,7 @@
 
 .navbar.navbar-profile .menu{
   margin-top: 20px;
+  padding: 0;
 }
 
 .navbar.navbar-profile .menu li.active a:active{
@@ -190,7 +191,7 @@ section.user-passport-wrapper{
   background-color: #777;
 }
 
-.tabs-left { margin-top: 80px; }
+.tabs-left { margin-top: 50px; }
 
 .nav-tabs {
   float: left;
@@ -232,11 +233,15 @@ section.user-passport-wrapper{
 .tab-content .tab-pane {
   /*display: none;*/
   background-color: #f4f4f4;
-  padding: 1.6rem;
+  padding: 50px;
   overflow-y: auto;
 }
-  
- .tab-content .tab-pane .active { display: block; }
+
+.tabs-left .nav-tabs li a{
+  border-radius: 0;
+}
+
+.tab-content .tab-pane .active { display: block; }
 
 
 .list-group {
