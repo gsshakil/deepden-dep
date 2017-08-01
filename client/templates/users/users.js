@@ -32,6 +32,20 @@
 //     }   
 // });
 
+Template.Avatar.helpers({
+    image1: function () {
+        if (Meteor.user()) return Meteor.user().profile.image;
+        else return 'img/profile-pic-1.jpg';
+    }
+});
+
+Template.editYourAvatarModal.helpers({
+    image: function () {
+        if (Meteor.user()) return Meteor.user().profile.image;
+        else return 'img/profile-pic-1.jpg';
+    }
+});
+
 Template.Avatar.events({
   'click img.filestack'(event,instance){
     if(WebApp.filestack)
@@ -39,6 +53,9 @@ Template.Avatar.events({
       }).then(function(result) {
           console.log(JSON.stringify(result.filesUploaded))
       });
+    },
+    'click .inc': function () {
+      $('#editYourAvatarModal').modal();
     }
 });
 

@@ -86,3 +86,13 @@
 .b-s-md{
     box-shadow: 5px 10px 10px 5px #f4f4f4;
 }
+
+label.error{
+    color: red;
+}
+
+input.error,
+textarea.error,
+select.error{
+    border-color: red;
+}

@@ -10,31 +10,66 @@
     
     <div class="container text-center">
         <div class="row m-t-lg">
-            <div class="grid"
-                data-isotope='{ "itemSelector": ".grid-item", "layoutMode": "fitRows" }'>                                                       
-                <div class="grid-item">{{> WorkCard }} </div>
+            
+             <div class="grid" data-isotope='{ "itemSelector": ".grid-item", "layoutMode": "fitRows" }'>                                                       
+                {{#each projects}}
+                    <div class="grid-item">{{> ProjectCard }} </div>                  
+                {{/each}}
+                                     
+                <!-- <div class="grid-item">{{> WorkCard }}</div>                        
                 <div class="grid-item">{{> WorkCard2 }}</div>                        
                 <div class="grid-item">{{> WorkCard }}</div>                        
                 <div class="grid-item">{{> WorkCard2 }}</div>                        
                 <div class="grid-item">{{> WorkCard }}</div>                        
-                <div class="grid-item">{{> WorkCard2 }}</div>                        
-                <div class="grid-item">{{> WorkCard }}</div>                        
                 <div class="grid-item">{{> WorkCard }}</div>                        
                 <div class="grid-item">{{> WorkCard2 }}</div>                        
                 <div class="grid-item">{{> WorkCard }}</div>                        
-                <div class="grid-item">{{> WorkCard2 }}</div>                        
-            </div>                    
+                <div class="grid-item">{{> WorkCard2 }}</div>                          -->
+            </div>                     
         </div>
         
         <script>
-            $('.grid').isotope({
-                // options...
-                itemSelector: '.grid-item',
-                masonry: {
-                    columnWidth: 10
-                }
-            });
+            setTimeout(function(){
+                $('.grid').isotope({
+                    // options...
+                    itemSelector: '.grid-item',
+                    masonry: {
+                        columnWidth: 10
+                    }
+                });
+            }, 500);
         </script>
+
+    </div>
+</template>
+
+<template name="ProjectCard">
+    <div class="work-item">
+        <div class="work-images">
+            <img src="img/project1.jpg" alt="">
+            <div class="work-item-content">
+                <div class="parent">
+                    <div class="child-cell">
+                        <h4 class="modal-title">{{title}}</h4>
+                        <p>by <a href="">{{userId}}</a> <span class="gloomy"><small>on {{createdAt}}</small></span></p>
+                        <p>{{description}}</p>
+                        <p>{{categories}}</p>
+                        <p>{{tags}}</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="work-item-footer">
+            <table class="tabs">
+                <tr>
+                    <td><a href=""><i class="fa fa-heart"></i>5565</a></td>
+                    <td><a href=""><i class="fa fa-eye"></i>1212</a></td>
+                    <td><a href=""><i class="fa fa-share-alt"></i></a></td>
+                </tr>
+            </table>
+        </div>
 
     </div>
 </template>

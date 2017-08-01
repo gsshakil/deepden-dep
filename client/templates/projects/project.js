@@ -39,8 +39,17 @@ Meteor.startup(function(){
       console.error(exception);
     })
   ;
-
-  $.getScript('../../js/galleria-1.5.7.min.js');
+    
+  setTimeout(function(){
+      $('.grid').isotope({
+          // options...
+          itemSelector: '.grid-item',
+          masonry: {
+              columnWidth: 10
+          }
+      });
+  }, 500);
+  // $.getScript('../../js/galleria-1.5.7.min.js');
   
 
 });
@@ -55,19 +64,97 @@ Template.filestack.events({
   }
 });
 
+Template.ProjectCard.helpers({
+  uploads() {
+      // Show newest projects at the top
+      Meteor.subscribe('uploads');
+      return Uploads.find({});
+  }
+});
+
+
+Template.Projects.helpers({
+  projects() {
+      // Show newest projects at the top
+      Meteor.subscribe('projects');
+      return Projects.find({});
+  }
+});
+
 Template.InserProjectForm.events({
-    
     'click btn-upload'(event, instance){
-        
         client.pick({
-            accept: 'image/*',
-            maxFiles: 5
-            }).then(function(result) {
-            console.log(JSON.stringify(result.filesUploaded))
+          accept: 'image/*',
+          maxFiles: 5
+        }).then(function(result) {
+            uploads = JSON.stringify(result.filesUploaded);
+            console.log(uploads);
+            Meteor.call('insertUploads', JSON.stringify(result.filesUploaded));           
         })
-       
+    },
+
+    'submit form': ( event ) => {
+        event.preventDefault();
+      
+        // Get value from form element
+        const title = event.target.projectTitle.value;
+        const description = event.target.projectDescription.value;
+        const categories = event.target.categories.value;
+        const tags = event.target.tags.value;
+    
+        // Insert a task into the collection
+        Meteor.call('insertProject', title,description,categories,tags); 
+        console.log(title,description,categories,tags); 
+
+        // Clear form and hide Modal
+        Modal.hide('InserProjectForm')
+        
     }
 
 });
 
+Template.InserProjectForm.onRendered( function() {
+  $( "#add-project" ).validate({
+    rules: {
+      projectTitle: {
+        required: true
+      },
+      projectDescription: {
+        required: true
+      },
+      categories: {
+        required: true
+      },
+      tags:{
+        required: true
+      }
+    },
+    messages: {
+      projectTitle: {
+        required: "Need a book title here!"
+      },
+      projectDescription: {
+        required: "Don't forget an author!"
+      },
+      categories: {
+        required: "Too shy to tell us why it's your favorite?"
+      },
+      tags: {
+        required: "Too shy to tell us why it's your favorite?"
+      }
+      
+    }
+  });
+});
 
+
+if (Meteor.isServer) {
+  Meteor.startup(function () {
+    UploadServer.init({
+      tmpDir: process.env.PWD + '/public/uploads',
+      uploadDir: process.env.PWD + '/public/uploads',
+      checkCreateDirectories: true,
+      uploadUrl: '/upload'
+    });
+  });
+}

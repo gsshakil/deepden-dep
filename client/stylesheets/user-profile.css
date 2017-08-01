@@ -255,3 +255,8 @@ section.user-passport-wrapper{
   line-height: 11px;
 }
   
+a.inc{
+  position: absolute;
+  background-color: #000;
+  opacity: .5;
+}

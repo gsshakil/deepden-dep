@@ -61,13 +61,15 @@
         </div>
 
         <script>
-            $('.grid').isotope({
-                // options...
-                itemSelector: '.grid-item',
-                masonry: {
-                    columnWidth: 10
-                }
-            });
+            setTimeout(function(){
+                $('.grid').isotope({
+                    // options...
+                    itemSelector: '.grid-item',
+                    masonry: {
+                        columnWidth: 10
+                    }
+                });
+            }, 1000);
         </script>
 
         <div class="btn-load-more text-center m-t-md">

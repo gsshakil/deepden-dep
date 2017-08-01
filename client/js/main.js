@@ -58,6 +58,35 @@ AccountsTemplates.configure({
     },
 });
 
+// configuring useraccounts for login with both username or email
+let pwd = AccountsTemplates.removeField('password');
+AccountsTemplates.removeField('email');
+AccountsTemplates.addFields([
+  {
+    _id: 'email',
+    type: 'email',
+    required: true,
+    displayName: 'Email',
+    re: /.+@(.+){2,}\.(.+){2,}/,
+    errStr: 'Invalid email'
+  },
+  {
+    _id: 'username',
+    type: 'text',
+    displayName: 'Username',
+    required: true,
+    minLength: 4
+  },
+  {
+    _id: 'username_and_email',
+    placeholder: 'Username or email',
+    type: 'text',
+    required: true,
+    displayName: 'Login'
+  },
+  pwd
+]);
+
 // Define these routes in a file loaded on both client and server
 AccountsTemplates.configureRoute('signIn', {
   name: 'signin',
