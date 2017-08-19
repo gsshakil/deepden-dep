@@ -93,6 +93,18 @@ Template.InserProjectForm.events({
         })
     },
 
+    'click .test'(event, instance){
+      // function foo(){
+        var a = 0; var b = 0; var c = 0;
+        console.log(a);
+        console.log(b);
+        console.log(c);
+      // }
+      // console.log(foo);
+    },    
+    
+    
+
     'submit form': ( event ) => {
         event.preventDefault();
       
@@ -154,7 +166,13 @@ if (Meteor.isServer) {
       tmpDir: process.env.PWD + '/public/uploads',
       uploadDir: process.env.PWD + '/public/uploads',
       checkCreateDirectories: true,
-      uploadUrl: '/upload'
+      uploadUrl: '/upload/',
+      // *** For renaming files on server
+      getFileName: function(file, formData) {
+        return new Date().getTime() + '-' + Math.floor((Math.random() * 10000) + 1) + '-' + file.name; 
+        // we get this value in the ajax response
+      }
     });
   });
 }
+

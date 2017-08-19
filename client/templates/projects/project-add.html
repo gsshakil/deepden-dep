@@ -4,6 +4,8 @@
             <div class="modal-dialog">
                 <div class="modal-content p-a-sm">
 
+                    <a href="" class="btn test">Test</a>
+
                     <div class="modal-header">
                         <h3>Add a Project</h3>
                     </div>
@@ -25,8 +27,7 @@
                                     <textarea id="" class="form-control required" name="projectDescription" cols="30" rows="4"></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <label for="upload">Upload Files</label>                                    
-                                    {{>dropzone url="/upload" id="template-helper"}}
+                                    {{> dropzone url='http://localhost:3000/upload' id='dropzoneDiv' maxFiles=4}}
                                 </div>
                                 <div class="form-group">  
                                     <label for="title">Select Categories</label>                                                                  

@@ -7,13 +7,42 @@
     <div class="container">
         <div class="row m-a-lg">
             <div class="col-md-6 col-md-offset-3">
-                {{> quickForm 
-                    collection="Jobs" 
-                    id="insertJobForm" 
-                    type="method"
-                    omitFields="userId" 
-                    meteormethod="insertJob"
-                }}
+            <!-- {{#with jobs}} -->
+                <form action="" id="add-job">
+                    <div class="form-group">
+                        <label for="jobtitle">Job Title</label>
+                        <input type="text" class="form-control required" name="jobTitle" id="jobtitle" value="{{jobTitle}}" placeholder="Enter Job Title">
+                    </div>
+                    <div class="form-group">
+                        <label for="jobrole">Role</label>
+                        <input type="text" class="form-control required" name="jobRole" id="jobrole" value="{{jobRole}}" placeholder="Enter Job Role">
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" class="form-control required" name="company" id="company" value="{{company}}" placeholder="Enter Company Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" class="form-control required" name="location" id="location" value="{{location}}" placeholder="Enter Location">
+                    </div>
+                    <div class="form-group">
+                        <label for="skills">Skills</label>
+                        <input type="text" class="form-control required" name="skills" id="skills" value="{{skills}}" placeholder="Enter Required Skills">
+                    </div>
+                    <div class="form-group">
+                        <label for="brief">Job Brief</label>
+                        <textarea class="form-control required" name="jobBrief" id="brief" cols="30" rows="3" value="{{jobBrief}}" placeholder="Enter brief about the job"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="joblink">Job Link</label>
+                        <input type="text" class="form-control required" name="jobLink" id="joblink" value="{{jobLink}}" placeholder="Enter job link">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    </div>                    
+                </form>
+            <!-- {{/with}}	 -->
             </div>
         </div>
     </div>

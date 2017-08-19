@@ -12,12 +12,18 @@
             </div>        
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="{{pathFor 'people'}}">People</a></li>
-                    <li><a href="{{pathFor 'projects'}}">Works</a></li>
-                    <li><a href="{{pathFor 'jobs'}}">Jobs</a></li>
+                     <li class="active"><a href="{{pathFor 'people'}}" data-tooltip="I'm a tooltip!"><i class="fa fa-users fa-md"></i></a>{{ > tooltips }}</li>                     
+                    <li><a href="{{pathFor 'brands'}}"><i class="fa fa-briefcase fa-md"></i></a></li>
+                    <li><a href="{{pathFor 'projects'}}"><i class="fa fa-file fa-md"></i></a></li>
+                    <li><a href="{{pathFor 'jobs'}}"><i class="fa fa-list fa-md"></i></a></li>
+                    <li><a href="{{pathFor 'jobs'}}"><i class="fa fa-shopping-bag fa-md"></i></a></li>                    
+                    <li><a href="{{pathFor 'jobs'}}"><i class="fa fa-universal-access fa-md"></i></a></li>
+                    <li><a href="{{pathFor 'jobs'}}"><i class="fa fa-university fa-md"></i></a></li>
+                    <li><a href="{{pathFor 'jobs'}}"><i class="fa fa-ellipsis-h fa-md"></i></a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     {{#if currentUser}}  
+                        <li><a href="{{pathFor 'peopleStream'}}"><i class="fa fa-shopping-cart fa-md"></i><span class="count">11</span></a></li>                  
                         <li><a href="{{pathFor 'peopleStream'}}"><i class="fa fa-bandcamp fa-md"></i><span class="count">20+</span></a></li>                  
                         <li><a href="" class="msgModal"><i class="fa fa-envelope fa-md"></i><span class="count">234</span></a></li>                  
                         <li><a href="" class="notificationModal"><i class="fa fa-bell fa-md"></i><span class="count">234</span></a></li>                  
@@ -43,7 +49,11 @@
                     {{/if}}
                 </ul>
             </div><!--/.nav-collapse -->
+            <script>
+                $(function () {
+                    $('[data-toggle="tooltip"]').tooltip()
+                })
+            </script>
         </div>
     </nav>
 </template>
-

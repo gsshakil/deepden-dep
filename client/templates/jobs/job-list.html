@@ -15,11 +15,9 @@
             </div>           
             <div class="col-md-9">
                 <div class="row m-b-lg">
-                    {{> jobItem}}
-                    {{> jobItem}}
-                    {{> jobItem}}
-                    {{> jobItem}}
-                    {{> jobItem}}
+                    {{#each jobs}}
+                        {{> jobItem}}
+                    {{/each}}
                 </div>
             </div>
         </div>
@@ -28,17 +26,21 @@
 
 
 <template name="jobItem">
-    <div class="col-md-10 col-md-offset-1 job-item">
+    <div class="col-md-12 job-item">
       <div class="row">
+        <!-- {{#with jobs}} -->
         <div class="col-md-9">
           <div class="title">
-            <h4>Applce Inc</h4>
-            <p>Product Design Lead</p>
+            <h4>{{jobTitle}}</h4>
+            <p>{{jobRole}}</p>
+            <p>{{jobBrief}}</p>    
+            <p class="m-t-md">{{location}}</p>                
           </div>
         </div>
         <div class="col-md-3 text-center">
-            <p class="m-t-md">London</p>
+            <a href="{{jobLink}}" class="btn btn-success">View/Apply</a>
         </div>
       </div>
+    <!-- {{/with}} -->
     </div>  
 </template>

@@ -23,4 +23,9 @@ Template.Navbar.helpers({
     }
 });
 
+Meteor.startup(function(){
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+    });
+});
 

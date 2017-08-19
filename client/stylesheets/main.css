@@ -88,7 +88,7 @@ a.disabled{
 
 .navbar{
     /*margin-top: 50px;*/
-    background-color:#2b5163;
+    background-color:#373e4c;
     border: none;
     margin-bottom: 0;
     padding-right: 25px;
@@ -179,6 +179,13 @@ a.disabled{
 .nav > li > a:hover, .nav > li > a:focus{
     background: transparent !important;
     outline: 0 !important;
+}
+
+.menu-icon-text{
+    position: absolute;
+    left: 11px;
+    top: 43px;
+    font-size: 12px;
 }
 
 /*===============Section 1r=====================*/

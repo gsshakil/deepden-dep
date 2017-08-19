@@ -1,10 +1,11 @@
 <template name="UserProfile">
     <div class="user-profile">
+         {{#with profile}} 
         <section class="header">
             {{> CoverPhoto}}
             {{> Avatar}}
             <div class="user-full-name">
-                <!--<h3 class="text-shaddow">SUFFIAN SAWRI ABIR</h3>-->
+                <h3 class="text-shaddow">{{firstName}} {{lastName}}</h3>
                 
             </div>
             <div class="edit-profile-button">
@@ -15,15 +16,52 @@
         </section>
         <section class="main-content">
             <section class="user-passport-wrapper">
-                <div class="add-profile-button text-center">
+                <!-- <div class="add-profile-button text-center">
                     <a href="{{pathFor 'editProfile'}}" class="btn btn-success">Update Info</a>
-                </div>
+                </div> -->
                 <div class="passport-content p-a-sm">
-                    
+                    <div class="text-center p-a-md p-t-0 p-b-sm">
+                        <strong>{{occupation}}</strong><br>
+                        <small>{{location}}</small>    
+                    </div>
+                    <hr>
+                    <div class="info m-t-md m-t-0">
+                        <p><strong>ABOUT</strong></p>                        
+                        <div class="bio m-b-sm">
+                            <p>{{about}}</p></div>
+                        <hr>
+                        <div class="skills m-b-sm">
+                            <p><strong>SKILLS</strong></p>
+                            <ul class="list-inline skill-tag">
+                                <li><a href="">Arhitecture</a></li>
+                                <li><a href="">Drawing</a></li>
+                                <li><a href="">Sketch</a></li>
+                                <li><a href="">Painting</a></li>
+                                <li><a href="">Photography</a></li>
+                                <li><a href="">3D Modeling</a></li>
+                                <li><a href="">Animation</a></li>
+                                <li><a href="">Autocad</a></li>
+                                <li><a href="">3ds Max</a></li>
+                                <li><a href="">V-Ray</a></li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <ul class="list-inline ct social">
+                            {{#if facebook}}
+                                <li><a href="{{facebook}}"><i class="fa fa-facebook"></i></a></li>
+                            {{/if}}
+                            {{#if google}}                            
+                                <li><a href="{{google}}"><i class="fa fa-google"></i></a></li>
+                            {{/if}}
+                            {{#if linkedin}}                            
+                                <li><a href="{{linkedin}}"><i class="fa fa-linkedin"></i></a></li>
+                            {{/if}}
+                            {{#if youtube}}                                                        
+                                <li><a href="{{youtube}}"><i class="fa fa-youtube"></i></a></li>
+                            {{/if}}
+                        </ul>
+                    </div>
                 </div>
-                <!--<div class="update-info-button text-center">
-                    <button class="btn btn-danger">Update Info</button>
-                </div>-->
             </section>
             <section class="portfolio-wrapper">
                 <div class="add-profile-button text-center">
@@ -31,6 +69,7 @@
                 </div>
             </section>
         </section>
+         {{/with}} 
     </div>
 </template>
 
