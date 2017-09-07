@@ -21,11 +21,17 @@
                     </div>
                 </div>
                 <div class="row">
-                    {{#each people}}
+                    <!-- {{#each people}} -->
                     <div class="col-md-6">
-                        {{> PeopleCard3}}
+                        {{> BrandCard3}}
                     </div>
-                    {{/each}}                                         
+                    <div class="col-md-6">
+                        {{> BrandCard4}}
+                    </div>
+                    <div class="col-md-6">
+                        {{> BrandCard5}}
+                    </div>
+                    <!-- {{/each}}                                          -->
                 </div>
             </div>
         </div>
@@ -37,10 +43,10 @@
 
     <div class="people-card">
         <div class="profile-pic">
-            <img class="greyscale" src="img/profile-pic-1.jpg">                                                                                   
+            <img class="greyscale" src="img/brand-1.jpg">                                                                                   
         </div>
         <div class="content text-center">
-            <a href="{{pathFor 'peopleDetails'}}"><h3>Jon Doe</h3></a>                
+            <a href="{{pathFor 'brandDetails'}}"><h3>Jon Doe</h3></a>                
             <small>3D Artist, Photographer</small>
             <br>
             <small>Dhaka, Bangladesh</small>              
@@ -93,22 +99,65 @@
 <template name="BrandCard3">
     <div class="people">
 		<div>
-            {{#with profile}}
+            <!-- {{#with profile}} -->
 			<figure>
                 <div class="profile-pic">
-                    <a href="{{pathFor 'peopleDetails'}}">
-                        {{#if image}}
+                    <a href="{{pathFor 'brandDetails'}}">
+                        <!-- {{#if image}}
                             <img alt="profile image" src="{{image}}"> <i></i>
-                        {{else}}
-                            <img alt="profile image" src="img/profile-pic-1.jpg"> <i></i>                        
-                        {{/if}}
+                        {{else}} -->
+                            <img alt="profile image" src="img/brand-2.jpg"> <i></i>                        
+                        <!-- {{/if}} -->
                     </a>
                 </div>
 				<figcaption>
 					<ul class="people-info">
-						<li class="name"><a href="{{pathFor 'peopleDetails'}}"><b>{{firstName}} {{lastName}}</b></a></li>
+						<li class="name"><a href="{{pathFor 'brandDetails'}}"><b>Halot Johnso</b></a></li>
 						<li class="job">{{occupation}}</li>
-						<li class="location">{{location}}</li>
+						<li class="location">Sydny, Australia</li>
+					</ul>
+					<div class="viewinfo">						
+                        <a href="" class="btn btn-primary"><i class="fa fa-user-plus fa-md"></i></a>
+                        <a href="" class="btn btn-primary"><i class="fa fa-envelope fa-md"></i></a>
+                        <!-- <span class="numlove"><i></i>4</span> -->
+                        <!-- <div class="cont-views">
+                            <span class="viewsOn followers"><span class="numviews">4</span> <span class="text">Followers</span></span>
+                            <span class="viewsOn projects"><span class="numviews">5</span> <span class="text">Projects</span></span>
+                        </div> -->
+                    </div>
+                </figcaption>
+            </figure>
+            <a href="{{pathFor 'brandDetails'}}" class="list-proj-people">
+                <ul class="sample-work">    
+                    <li><img class="lazy" data-original="http://img.archilovers.com/projects/e_150_0148fc52-77b6-4ea1-b2c4-64a11fbd6582.jpg" src="http://img.archilovers.com/projects/e_150_0148fc52-77b6-4ea1-b2c4-64a11fbd6582.jpg" style="display: inline;"></li>
+                    <li><img class="lazy" data-original="http://img.archilovers.com/projects/e_150_fa2d9d4c-848f-40b5-85ec-1d4e3d66b77e.JPG" src="http://img.archilovers.com/projects/e_150_fa2d9d4c-848f-40b5-85ec-1d4e3d66b77e.JPG" style="display: inline;"></li>
+                    <li><img class="lazy" data-original="http://img.archilovers.com/projects/e_150_54c52246-c2bb-45c4-bc5c-8a434e319fe7.jpg" src="http://img.archilovers.com/projects/e_150_54c52246-c2bb-45c4-bc5c-8a434e319fe7.jpg" style="display: inline;"></li>
+                </ul>
+            </a>
+            <!-- {{/with}} -->
+        </div>
+    </div>
+</template>
+
+<template name="BrandCard4">
+    <div class="people">
+		<div>
+            <!-- {{#with profile}} -->
+			<figure>
+                <div class="profile-pic">
+                    <a href="{{pathFor 'brandDetails'}}">
+                        <!-- {{#if image}}
+                            <img alt="profile image" src="{{image}}"> <i></i>
+                        {{else}} -->
+                            <img alt="profile image" src="img/brand-1.jpg"> <i></i>                        
+                        <!-- {{/if}} -->
+                    </a>
+                </div>
+				<figcaption>
+					<ul class="people-info">
+						<li class="name"><a href="{{pathFor 'peopleDetails'}}"><b>Creu Soul</b></a></li>
+						<li class="job">{{occupation}}</li>
+						<li class="location">Sydny, Australia</li>
 					</ul>
 					<div class="viewinfo">						
                         <a href="" class="btn btn-primary"><i class="fa fa-user-plus fa-md"></i></a>
@@ -128,7 +177,51 @@
                     <li><img class="lazy" data-original="http://img.archilovers.com/projects/e_150_54c52246-c2bb-45c4-bc5c-8a434e319fe7.jpg" src="http://img.archilovers.com/projects/e_150_54c52246-c2bb-45c4-bc5c-8a434e319fe7.jpg" style="display: inline;"></li>
                 </ul>
             </a>
-            {{/with}}
+            <!-- {{/with}} -->
+        </div>
+    </div>
+</template>
+
+
+<template name="BrandCard5">
+    <div class="people">
+		<div>
+            <!-- {{#with profile}} -->
+			<figure>
+                <div class="profile-pic">
+                    <a href="{{pathFor 'brandDetails'}}">
+                        <!-- {{#if image}}
+                            <img alt="profile image" src="{{image}}"> <i></i>
+                        {{else}} -->
+                            <img alt="profile image" src="img/brand-3.jpg"> <i></i>                        
+                        <!-- {{/if}} -->
+                    </a>
+                </div>
+				<figcaption>
+					<ul class="people-info">
+						<li class="name"><a href="{{pathFor 'brandDetails'}}"><b>Conneta</b></a></li>
+						<li class="job">{{occupation}}</li>
+						<li class="location">Sydny, Australia</li>
+					</ul>
+					<div class="viewinfo">						
+                        <a href="" class="btn btn-primary"><i class="fa fa-user-plus fa-md"></i></a>
+                        <a href="" class="btn btn-primary"><i class="fa fa-envelope fa-md"></i></a>
+                        <!-- <span class="numlove"><i></i>4</span> -->
+                        <!-- <div class="cont-views">
+                            <span class="viewsOn followers"><span class="numviews">4</span> <span class="text">Followers</span></span>
+                            <span class="viewsOn projects"><span class="numviews">5</span> <span class="text">Projects</span></span>
+                        </div> -->
+                    </div>
+                </figcaption>
+            </figure>
+            <a href="{{pathFor 'peopleDetails'}}" class="list-proj-people">
+                <ul class="sample-work">    
+                    <li><img class="lazy" data-original="http://img.archilovers.com/projects/e_150_0148fc52-77b6-4ea1-b2c4-64a11fbd6582.jpg" src="http://img.archilovers.com/projects/e_150_0148fc52-77b6-4ea1-b2c4-64a11fbd6582.jpg" style="display: inline;"></li>
+                    <li><img class="lazy" data-original="http://img.archilovers.com/projects/e_150_fa2d9d4c-848f-40b5-85ec-1d4e3d66b77e.JPG" src="http://img.archilovers.com/projects/e_150_fa2d9d4c-848f-40b5-85ec-1d4e3d66b77e.JPG" style="display: inline;"></li>
+                    <li><img class="lazy" data-original="http://img.archilovers.com/projects/e_150_54c52246-c2bb-45c4-bc5c-8a434e319fe7.jpg" src="http://img.archilovers.com/projects/e_150_54c52246-c2bb-45c4-bc5c-8a434e319fe7.jpg" style="display: inline;"></li>
+                </ul>
+            </a>
+            <!-- {{/with}} -->
         </div>
     </div>
 </template>
